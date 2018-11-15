@@ -13,7 +13,8 @@
         "75c21689-83df-4723-9e65-821b8519e5fd",
         "acff774e-768e-4071-9f58-a1ff71ed85fb",
         "91563ecd-41b7-49c4-80d3-d51dfa99588d",
-        "918ef552-0802-4cf7-ae4a-ef236471add0"
+        "918ef552-0802-4cf7-ae4a-ef236471add0",
+        "d53928b0-1a80-4011-b904-d2c1315ce4e7"
     ],
     "IsDnD": false,
     "layers": [
@@ -46,14 +47,14 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
-            "userdefined_depth": false,
+            "userdefined_depth": true,
             "visible": true
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "TileLayer",
             "id": "03fee12d-12b0-4f44-9067-6f89147633e8",
-            "depth": 100,
+            "depth": 1,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -63,7 +64,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_703C312F","id": "d53928b0-1a80-4011-b904-d2c1315ce4e7","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_703C312F","objId": "205ad33f-cdd3-49a4-a529-1cf34ca450e7","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 96,"y": 0}
             ],
             "layers": [
 
@@ -72,7 +73,7 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
-            "userdefined_depth": false,
+            "userdefined_depth": true,
             "visible": true
         },
         {
@@ -82,7 +83,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 200,
+            "depth": 101,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

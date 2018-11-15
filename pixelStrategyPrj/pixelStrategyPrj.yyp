@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "205ad33f-cdd3-49a4-a529-1cf34ca450e7",
+            "Value": {
+                "id": "7c2df06e-75b6-41d4-83cb-9a144c97c730",
+                "resourcePath": "objects\\gameManager_obj\\gameManager_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "20c9fb9d-88e8-41e1-8b59-285cf94aa0e3",
             "Value": {
                 "id": "5b42d8ca-af71-4ee3-a737-62ee8ef3c5d7",
@@ -252,6 +260,14 @@
                 "id": "caa38259-0eb5-4aa5-8df9-aa4519fa27fe",
                 "resourcePath": "objects\\mapSizeIcon_obj\\mapSizeIcon_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c023e67e-0aa6-4da9-b348-75610c96ebd7",
+            "Value": {
+                "id": "3f57e3fb-6d8b-4ffd-8360-edbf1e37ee10",
+                "resourcePath": "sprites\\pizza_spr\\pizza_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
