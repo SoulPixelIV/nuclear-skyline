@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "586a45a5-e005-4fce-9d01-0533f0461e74",
+            "Value": {
+                "id": "e87fb3a6-c7b9-4af1-b35d-94a9d95e4a53",
+                "resourcePath": "objects\\hudGenerator_obj\\hudGenerator_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "59435b47-313e-4d9c-a22f-a4ad4ae767a4",
             "Value": {
                 "id": "fef4d37d-c5d6-4c98-a5eb-2d23fad8398f",
@@ -212,6 +220,14 @@
                 "id": "408c806e-3790-4fa5-8d86-b9f39f0bac9a",
                 "resourcePath": "objects\\reloadIcon_obj\\reloadIcon_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b8794013-b6c8-4549-aa67-e88560694899",
+            "Value": {
+                "id": "75a661ff-fb31-4218-ac9d-112cd5a0dcda",
+                "resourcePath": "sprites\\HUDStatline_spr\\HUDStatline_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
