@@ -8,17 +8,17 @@ global.sizeY = mapSizeIcon_obj.mapSize;
 waterPossibility = waterPossibilityIcon_obj.percentage;
 islandPossibility = islandPossibilityIcon_obj.percentage;
 
-posX = 32;
-posY = 32;
+posX = 64;
+posY = 64;
 
 if (mapLoading)
 {
 	randomise();
 
 	//Map creation
-	for (posY = 32; posY < global.sizeY; posY += 32)
+	for (posY = 64; posY < global.sizeY; posY += 64)
 	{
-		for (posX = 32; posX < global.sizeX; posX += 32)
+		for (posX = 64; posX < global.sizeX; posX += 64)
 		{
 			//Watertile Creation
 			if (random(100) < waterPossibility)
@@ -31,10 +31,10 @@ if (mapLoading)
 				//Island Creation
 				with (grassTilei)
 				{
-					if (instance_position(worldGenerator_obj.posX + 32, worldGenerator_obj.posY, waterTile_obj) == waterTile_obj && 
-					instance_position(worldGenerator_obj.posX - 32, worldGenerator_obj.posY, waterTile_obj) == waterTile_obj && 
-					instance_position(worldGenerator_obj.posX, worldGenerator_obj.posY + 32, waterTile_obj) == waterTile_obj && 
-					instance_position(worldGenerator_obj.posX, worldGenerator_obj.posY - 32, waterTile_obj) == waterTile_obj)
+					if (instance_position(worldGenerator_obj.posX + 64, worldGenerator_obj.posY, waterTile_obj) == waterTile_obj && 
+					instance_position(worldGenerator_obj.posX - 64, worldGenerator_obj.posY, waterTile_obj) == waterTile_obj && 
+					instance_position(worldGenerator_obj.posX, worldGenerator_obj.posY + 64, waterTile_obj) == waterTile_obj && 
+					instance_position(worldGenerator_obj.posX, worldGenerator_obj.posY - 64, waterTile_obj) == waterTile_obj)
 					{
 						if (random(100) < worldGenerator_obj.islandPossibility)
 						{
@@ -46,8 +46,8 @@ if (mapLoading)
 		}
 	}
 	//Mainbases Creation
-	base1SpawnX = random_range(1, mapSizeIcon_obj.mapSize / 16)
-	base1SpawnY = random_range(1, mapSizeIcon_obj.mapSize / 16)
-	instance_create_layer(base1SpawnX * 16, base1SpawnY * 16, 0, mainBase_obj);
+	base1SpawnX = irandom_range(1, (mapSizeIcon_obj.mapSize/64))
+	base1SpawnY = irandom_range(1, (mapSizeIcon_obj.mapSize/64))
+	instance_create_layer(base1SpawnX * 64, base1SpawnY * 64, 0, mainBase_obj);
 	mapLoading = false;
 }
