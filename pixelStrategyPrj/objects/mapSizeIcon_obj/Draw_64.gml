@@ -2,4 +2,4 @@
 
 draw_self();
 
-draw_text(x - 64, y, mapSize);
+draw_text(x - 64, y, worldGenerator_obj.mapSize);

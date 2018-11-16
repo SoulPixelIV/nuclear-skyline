@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0a916c6b-3698-472b-a332-93baaddf3ba1",
+            "Value": {
+                "id": "a7a4b7e4-db5e-4894-b661-5d5ce4dbacfc",
+                "resourcePath": "objects\\soldiers_obj\\soldiers_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "124c632a-014a-4bb3-a0bd-953af5b7b0a2",
             "Value": {
                 "id": "535f7611-f74b-4a55-9e6d-04d226088fb6",
@@ -175,6 +183,14 @@
             }
         },
         {
+            "Key": "7a69d23e-42e4-431e-9fc5-956d3f5cfb57",
+            "Value": {
+                "id": "aeb8acaa-0e09-4779-ae7f-f426eb90395f",
+                "resourcePath": "sprites\\circleRed_spr\\circleRed_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "894b9b42-4844-4639-b08c-762b45a671e2",
             "Value": {
                 "id": "169b375e-4887-46c0-87eb-33701d659401",
@@ -284,6 +300,14 @@
                 "id": "a95452b7-8c89-4e1b-b641-9fed9e993b62",
                 "resourcePath": "views\\ce5838cb-07ff-4e70-be23-ba5bc7b73925.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d3ef6c91-f6f4-4a2a-9f01-23a10d3b17d4",
+            "Value": {
+                "id": "465bb272-bd4d-49f2-8f5f-f19bac212b48",
+                "resourcePath": "sprites\\soldiers_spr\\soldiers_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

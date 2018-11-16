@@ -1,3 +1,3 @@
 /// @description Get String
 
-mapSize = get_integer("Map Size", 1024);
+worldGenerator_obj.mapSize = get_integer("Map Size", 1024);

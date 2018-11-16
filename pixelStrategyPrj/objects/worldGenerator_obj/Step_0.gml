@@ -1,8 +1,8 @@
 /// @description World Generator
 
 //###Vars###
-global.sizeX = mapSizeIcon_obj.mapSize;
-global.sizeY = mapSizeIcon_obj.mapSize;
+global.sizeX = mapSize;
+global.sizeY = mapSize;
 
 //0% - 100%
 waterPossibility = waterPossibilityIcon_obj.percentage;
@@ -46,8 +46,9 @@ if (mapLoading)
 		}
 	}
 	//Mainbases Creation
-	base1SpawnX = irandom_range(1, (mapSizeIcon_obj.mapSize/64))
-	base1SpawnY = irandom_range(1, (mapSizeIcon_obj.mapSize/64))
+	base1SpawnX = irandom_range(1, (mapSize/64))
+	base1SpawnY = irandom_range(1, (mapSize/64))
 	instance_create_layer(base1SpawnX * 64, base1SpawnY * 64, 0, mainBase_obj);
+	instance_create_layer((base1SpawnX * 64) + 64, base1SpawnY * 64, 0, soldiers_obj);
 	mapLoading = false;
 }

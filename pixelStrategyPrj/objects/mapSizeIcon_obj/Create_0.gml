@@ -1,3 +1,3 @@
 /// @description Create Values
 
-mapSize = 1024;
+//mapSize = 1024;
