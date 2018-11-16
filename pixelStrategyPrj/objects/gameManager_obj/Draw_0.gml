@@ -1,8 +1,16 @@
-/// @description Insert description here
-
-draw_text(200, 200, string(mXPos) + " " + string(mYPos));
+/// @description Draw Destination
 
 if (drawDestination)
 {
-	draw_sprite(squareRed_spr, 0, mXPos, mYPos);
+	if (selectedUnit != noone)
+	{
+		if (selectedUnit.outOfRange)
+		{
+			draw_sprite(destinationSquare_spr, 0, mXPos, mYPos);
+		}
+		else
+		{
+			draw_sprite(destinationSquare_spr, 1, mXPos, mYPos);
+		}
+	}
 }

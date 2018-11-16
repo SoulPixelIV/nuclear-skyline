@@ -2,7 +2,7 @@
     "id": "c023e67e-0aa6-4da9-b348-75610c96ebd7",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "pizza_spr",
+    "name": "actionWindow_spr",
     "For3D": false,
     "HTile": false,
     "VTile": false,

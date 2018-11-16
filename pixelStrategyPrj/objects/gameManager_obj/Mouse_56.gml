@@ -1,4 +1,7 @@
 /// @description Unit Handling
 
-selectedUnit.moving = true;
+if (selectedUnit != noone)
+{
+	selectedUnit.moving = true;
+}
 drawDestination = false;

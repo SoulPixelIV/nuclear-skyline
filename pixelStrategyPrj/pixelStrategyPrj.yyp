@@ -226,7 +226,7 @@
             "Key": "a781a8cb-2dec-4a68-a669-99f1d5df0fae",
             "Value": {
                 "id": "67e71ec5-2aed-41c4-8e31-d2b7b1e9a483",
-                "resourcePath": "sprites\\squareRed_spr\\squareRed_spr.yy",
+                "resourcePath": "sprites\\destinationSquare_spr\\destinationSquare_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -290,7 +290,7 @@
             "Key": "c023e67e-0aa6-4da9-b348-75610c96ebd7",
             "Value": {
                 "id": "3f57e3fb-6d8b-4ffd-8360-edbf1e37ee10",
-                "resourcePath": "sprites\\pizza_spr\\pizza_spr.yy",
+                "resourcePath": "sprites\\actionWindow_spr\\actionWindow_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
