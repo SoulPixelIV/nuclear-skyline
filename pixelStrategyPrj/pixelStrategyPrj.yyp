@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "a781a8cb-2dec-4a68-a669-99f1d5df0fae",
+            "Value": {
+                "id": "67e71ec5-2aed-41c4-8e31-d2b7b1e9a483",
+                "resourcePath": "sprites\\squareRed_spr\\squareRed_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "231c61cf-d49a-4f4b-9106-131a6c6abf03",

@@ -50,5 +50,6 @@ if (mapLoading)
 	base1SpawnY = irandom_range(1, (mapSize/64))
 	instance_create_layer(base1SpawnX * 64, base1SpawnY * 64, 0, mainBase_obj);
 	instance_create_layer((base1SpawnX * 64) + 64, base1SpawnY * 64, 0, soldiers_obj);
+	instance_create_layer((base1SpawnX * 64) - 64, base1SpawnY * 64, 0, soldiers_obj);
 	mapLoading = false;
 }

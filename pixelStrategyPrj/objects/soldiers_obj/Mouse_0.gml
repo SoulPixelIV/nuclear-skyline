@@ -1,3 +1,4 @@
 /// @description Drag Movement
 
-drawCircle = true;
+gameManager_obj.selectedUnit = id;
+
