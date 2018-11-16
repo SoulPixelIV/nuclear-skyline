@@ -46,10 +46,16 @@ if (mapLoading)
 		}
 	}
 	//Mainbases Creation
-	base1SpawnX = irandom_range(1, (mapSize/64))
-	base1SpawnY = irandom_range(1, (mapSize/64))
+	base1SpawnX = irandom_range(3, (mapSize/64) - 3)
+	base1SpawnY = irandom_range(3, (mapSize/64) - 3)
 	instance_create_layer(base1SpawnX * 64, base1SpawnY * 64, 0, mainBase_obj);
 	instance_create_layer((base1SpawnX * 64) + 64, base1SpawnY * 64, 0, soldiers_obj);
 	instance_create_layer((base1SpawnX * 64) - 64, base1SpawnY * 64, 0, soldiers_obj);
 	mapLoading = false;
+}
+
+//Setting not walkable tiles
+with (waterTile_obj)
+{
+	mp_grid_add_cell(global.grid, floor(x / 64), floor(y / 64));
 }

@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "231f4af3-eba3-4ab5-b8fd-9fcf75f52122",
+            "Value": {
+                "id": "a2424922-b243-4f9d-bbe1-33f6e71a853d",
+                "resourcePath": "sprites\\dataIcon_spr\\dataIcon_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "237b2404-b3c1-4978-adc2-793bb090eeb5",
             "Value": {
                 "id": "38aa3eab-fde3-4628-ab27-1a2ab0be8493",
@@ -324,6 +332,14 @@
                 "id": "defc0f4e-e49f-4a2b-9b1f-dedd9d875c1a",
                 "resourcePath": "views\\d74d237f-3040-477f-8aa5-a84db411b5d4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dded6d30-f941-4fc6-815f-1e2513f63e08",
+            "Value": {
+                "id": "3cf6d9c8-1ace-458b-83c3-e06958343272",
+                "resourcePath": "sprites\\moneyIcon_spr\\moneyIcon_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
