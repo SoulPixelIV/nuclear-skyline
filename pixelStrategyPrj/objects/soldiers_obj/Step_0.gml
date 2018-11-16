@@ -5,7 +5,7 @@ if (moving)
     path = path_add();
     if (mp_grid_path(global.grid, path, x, y, gameManager_obj.mXPos, gameManager_obj.mYPos, 1))
 	{
-		if ((((x - gameManager_obj.mXPos) / 64) + ((y - gameManager_obj.mYPos) / 64)) <= steps)
+		if ((path_get_length(path) / 64) <= steps + 1)
 		{
 			path_start(path, moveSpeed, path_action_stop, 0);
 		}
@@ -14,9 +14,10 @@ if (moving)
 	drawCircle = false;
 }
 
-if (gameManager_obj.mXPos > x && gameManager_obj.mYPos > y)
+path = path_add();
+if (mp_grid_path(global.grid, path, x, y, gameManager_obj.mXPos, gameManager_obj.mYPos, 1))
 {
-	if ((((x - gameManager_obj.mXPos) / 64) + ((y - gameManager_obj.mYPos) / 64)) <= steps)
+	if ((path_get_length(path) / 64) <= steps + 1)
 	{
 		outOfRange = false;
 	}
@@ -25,5 +26,6 @@ if (gameManager_obj.mXPos > x && gameManager_obj.mYPos > y)
 		outOfRange = true;
 	}
 }
+
 
 
