@@ -7,6 +7,9 @@ moveSpeed = 2.2;
 moving = false;
 drawCircle = false;
 outOfRange = false;
+startPosX = x;
+startPosY = y;
+stepsSave = steps;
 
 //Move back in to bounds
 if (place_meeting(x, y, waterTile_obj))

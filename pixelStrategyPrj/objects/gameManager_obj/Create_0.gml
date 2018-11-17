@@ -3,6 +3,7 @@
 room_speed = 60;
 
 //Main Values
+gameRound = 0;
 money = 500;
 data = 8;
 

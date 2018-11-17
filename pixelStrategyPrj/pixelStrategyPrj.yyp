@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "091094fb-021e-4c3e-b8e6-6969259de067",
+            "Value": {
+                "id": "dbdafc66-5c9a-4e18-ad73-3a07628131ee",
+                "resourcePath": "scripts\\nextRound_scr\\nextRound_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0a916c6b-3698-472b-a332-93baaddf3ba1",
             "Value": {
                 "id": "a7a4b7e4-db5e-4894-b661-5d5ce4dbacfc",
@@ -151,6 +159,14 @@
             }
         },
         {
+            "Key": "4cea7bc2-6df1-4f8a-b670-fc9731d06372",
+            "Value": {
+                "id": "456b4139-e75c-441d-8868-6b4dce7cff75",
+                "resourcePath": "sprites\\nextRoundButton_spr\\nextRoundButton_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "586a45a5-e005-4fce-9d01-0533f0461e74",
             "Value": {
                 "id": "e87fb3a6-c7b9-4af1-b35d-94a9d95e4a53",
@@ -188,6 +204,14 @@
                 "id": "38fadd0b-0a56-49a8-a770-a8976cc4567e",
                 "resourcePath": "views\\6d91ae21-4340-47de-8882-9ad856e10cfe.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "74ac3f36-40c5-46e5-860c-7fead9fed306",
+            "Value": {
+                "id": "b88efd52-dae8-43c8-b9a6-834c09f7efaf",
+                "resourcePath": "objects\\nextRoundButton_obj\\nextRoundButton_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {

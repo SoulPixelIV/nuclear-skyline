@@ -23,11 +23,11 @@ if (mapLoading)
 			//Watertile Creation
 			if (random(100) < waterPossibility)
 			{
-				instance_create_layer(posX, posY, 1, waterTile_obj);
+				instance_create_layer(posX, posY, 2, waterTile_obj);
 			}
 			else
 			{
-				grassTilei = instance_create_layer(posX, posY, 1, grassTile_obj);
+				grassTilei = instance_create_layer(posX, posY, 2, grassTile_obj);
 				//Island Creation
 				with (grassTilei)
 				{
@@ -48,9 +48,9 @@ if (mapLoading)
 	//Mainbases Creation
 	base1SpawnX = irandom_range(3, (mapSize/64) - 3)
 	base1SpawnY = irandom_range(3, (mapSize/64) - 3)
-	instance_create_layer(base1SpawnX * 64, base1SpawnY * 64, 0, mainBase_obj);
-	instance_create_layer((base1SpawnX * 64) + 64, base1SpawnY * 64, 0, soldiers_obj);
-	instance_create_layer((base1SpawnX * 64) - 64, base1SpawnY * 64, 0, soldiers_obj);
+	instance_create_layer(base1SpawnX * 64, base1SpawnY * 64, 1, mainBase_obj);
+	instance_create_layer((base1SpawnX * 64) + 64, base1SpawnY * 64, 1, soldiers_obj);
+	instance_create_layer((base1SpawnX * 64) - 64, base1SpawnY * 64, 1, soldiers_obj);
 	mapLoading = false;
 }
 
