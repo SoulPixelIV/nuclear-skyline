@@ -45,12 +45,16 @@ if (mapLoading)
 			}
 		}
 	}
-	//Mainbases Creation
-	base1SpawnX = irandom_range(3, (mapSize/64) - 3)
-	base1SpawnY = irandom_range(3, (mapSize/64) - 3)
-	instance_create_layer(base1SpawnX * 64, base1SpawnY * 64, 1, mainBase_obj);
-	instance_create_layer((base1SpawnX * 64) + 64, base1SpawnY * 64, 1, soldiers_obj);
-	instance_create_layer((base1SpawnX * 64) - 64, base1SpawnY * 64, 1, soldiers_obj);
+	//Mainbase Creation
+	baseSpawnX = irandom_range(3, (mapSize/64) - 3)
+	baseSpawnY = irandom_range(3, (mapSize/64) - 3)
+	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 1, mainBase_obj);
+	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 1, soldiers_obj);
+	//Enemybase Creation
+	baseSpawnX = irandom_range(3, (mapSize/64) - 3)
+	baseSpawnY = irandom_range(3, (mapSize/64) - 3)
+	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 1, enemyBase_obj);
+	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 1, soldiersEnemy_obj);
 	mapLoading = false;
 }
 
