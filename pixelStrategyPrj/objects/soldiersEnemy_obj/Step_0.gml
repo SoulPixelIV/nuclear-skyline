@@ -3,36 +3,50 @@
 if (moving)
 {	
     path = path_add();
-    if (mp_grid_path(global.grid, path, x, y, gameManager_obj.mXPos, gameManager_obj.mYPos, 1))
+	if (dirMove == 0)
 	{
-		if ((path_get_length(path) / 64) <= steps)
+	    if (mp_grid_path(global.grid, path, x, y, x + 64, y, 1))
 		{
-			steps -= (floor(path_get_length(path) / 64));
-			path_start(path, moveSpeed, path_action_stop, 0);
+			if ((path_get_length(path) / 64) <= steps)
+			{
+				path_start(path, moveSpeed, path_action_stop, 0);
+			}
 		}
+		moving = false;
+		steps -= 1;
 	}
-	moving = false;
-	drawCircle = false;
-}
-
-//Check if out of range
-path = path_add();
-if (mp_grid_path(global.grid, path, x, y, gameManager_obj.mXPos, gameManager_obj.mYPos, 0))
-{
-	if ((path_get_length(path) / 64) <= steps)
+	if (dirMove == 1)
 	{
-		if (place_meeting(gameManager_obj.mXPos, gameManager_obj.mYPos, waterTile_obj))
+	    if (mp_grid_path(global.grid, path, x, y, x - 64, y, 1))
 		{
-			outOfRange = true;
+			if ((path_get_length(path) / 64) <= steps)
+			{
+				path_start(path, moveSpeed, path_action_stop, 0);
+			}
 		}
-		else
-		{
-			outOfRange = false;
-		}
+		moving = false;
 	}
-	else
+	if (dirMove == 2)
 	{
-		outOfRange = true;
+	    if (mp_grid_path(global.grid, path, x, y, x, y + 64, 1))
+		{
+			if ((path_get_length(path) / 64) <= steps)
+			{
+				path_start(path, moveSpeed, path_action_stop, 0);
+			}
+		}
+		moving = false;
+	}
+	if (dirMove == 3)
+	{
+	    if (mp_grid_path(global.grid, path, x, y, x, y - 64, 1))
+		{
+			if ((path_get_length(path) / 64) <= steps)
+			{
+				path_start(path, moveSpeed, path_action_stop, 0);
+			}
+		}
+		moving = false;
 	}
 }
 

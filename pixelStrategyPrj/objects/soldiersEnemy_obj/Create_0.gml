@@ -3,9 +3,9 @@
 //Movement Values
 steps = 2;
 moveSpeed = 2.2;
+dirMove = 0;
 
 moving = false;
-drawCircle = false;
 outOfRange = false;
 startPosX = x;
 startPosY = y;

@@ -1,4 +1,13 @@
-/// @description Back in to bounds
+/// @description Enemy AI
+
+if (soldiersEnemy_obj.steps > 0 && soldiersEnemy_obj.moving == false)
+{
+	with (soldiersEnemy_obj)
+	{
+		soldiersEnemy_obj.moving = true;
+		soldiersEnemy_obj.dirMove = 0;
+	}
+}
 
 //Back in to bounds
 if (distance_to_object(mainBase_obj) < 256)
