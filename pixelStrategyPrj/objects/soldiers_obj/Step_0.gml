@@ -8,7 +8,7 @@ if (moving)
 		if ((path_get_length(path) / 64) <= steps)
 		{
 			steps -= (floor(path_get_length(path) / 64));
-			path_start(path, moveSpeed, path_action_stop, 0);
+			path_start(path, moveSpeed, path_action_stop, 1);
 		}
 	}
 	moving = false;

@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "185063a5-f408-4ce7-b411-e092f2aef254",
+            "Value": {
+                "id": "55483aa6-5200-4194-b869-796bff56403f",
+                "resourcePath": "scripts\\enemyAI_scr\\enemyAI_scr.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1ddfedad-a08b-46fc-af97-d2ae92a0646a",
             "Value": {
                 "id": "b17cbba9-4da9-4b57-b735-612a22f4e7dd",
@@ -220,6 +228,14 @@
                 "id": "b1442f43-2b1b-4b68-ac6b-9f94350c5651",
                 "resourcePath": "sprites\\reloadIcon_spr\\reloadIcon_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5d38a7be-fd38-40a0-ae48-c2eff8e6da76",
+            "Value": {
+                "id": "8d87288e-e348-4116-9dfd-20988950257a",
+                "resourcePath": "objects\\obstacle_obj\\obstacle_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -464,7 +480,8 @@
         }
     ],
     "script_order": [
-        "091094fb-021e-4c3e-b8e6-6969259de067"
+        "091094fb-021e-4c3e-b8e6-6969259de067",
+        "185063a5-f408-4ce7-b411-e092f2aef254"
     ],
     "tutorial": ""
 }
