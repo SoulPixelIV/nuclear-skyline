@@ -3,7 +3,7 @@
 if (moving)
 {	
     path = path_add();
-    if (mp_grid_path(global.grid, path, x, y, gameManager_obj.mXPos, gameManager_obj.mYPos, 1))
+    if (mp_grid_path(global.grid, path, x, y, gameManager_obj.mXPos, gameManager_obj.mYPos, 0))
 	{
 		if ((path_get_length(path) / 64) <= steps)
 		{
