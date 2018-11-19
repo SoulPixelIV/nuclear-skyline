@@ -14,7 +14,15 @@ draw_text(152, 6, string(gameManager_obj.data));
 //Shop Menu
 if (gameManager_obj.shopMenu)
 {
+	//Draw Background
 	draw_sprite_ext(menuBackground_spr, 0, 640, 360, 10, 10, 0, 0, image_alpha);
+	//Draw Cursor
+	draw_sprite(cursor_spr, 0, 400, 152 + (cursorPos * 32));
+	//Draw Text Elements
+	for (i = 0; i < array_length_1d(shopMenuElement); i++)
+	{
+		draw_text(256, 140 + (i * 32), shopMenuElement[i]);
+	}
 }
 
 //GameRound

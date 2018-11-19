@@ -3,4 +3,5 @@
 if (keyboard_check_pressed(vk_escape))
 {
 	shopMenu = false;
+	hudGenerator_obj.cursorPos = 0;
 }
