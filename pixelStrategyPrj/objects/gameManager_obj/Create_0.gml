@@ -7,6 +7,8 @@ gameRound = 0;
 money = 500;
 data = 8;
 
+shopMenu = false;
+
 //Selecting Unit
 mXPos = 0;
 mYPos = 0;

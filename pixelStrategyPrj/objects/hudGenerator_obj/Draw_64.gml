@@ -11,7 +11,11 @@ draw_text(56, 6, string(gameManager_obj.money));
 draw_sprite(dataIcon_spr, 0, 128, 16);
 draw_text(152, 6, string(gameManager_obj.data));
 
-
+//Shop Menu
+if (gameManager_obj.shopMenu)
+{
+	draw_sprite_ext(menuBackground_spr, 0, 640, 360, 10, 10, 0, 0, image_alpha);
+}
 
 //GameRound
 draw_text(1100, 6, "Round: " + string(gameManager_obj.gameRound));
