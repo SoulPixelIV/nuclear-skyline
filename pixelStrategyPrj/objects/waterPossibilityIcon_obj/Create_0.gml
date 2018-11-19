@@ -1,3 +1,3 @@
 /// @description Create Values
 
-percentage = 30;
+percentage = 5;
