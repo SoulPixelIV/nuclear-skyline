@@ -25,16 +25,15 @@ for (j = 0; j < soldiersEnemy_obj.steps; j++)
 			switch (moveDir)
 				{
 				case 0:
-					if !(place_meeting(soldiersEnemy[i].x + 64, soldiersEnemy[i].y, obstacle_obj) && soldiersEnemy[i].x + 64 > worldGenerator_obj.mapSize - 64)
+					if !(place_meeting(soldiersEnemy[i].x + 64, soldiersEnemy[i].y, obstacle_obj) && soldiersEnemy[i].x + 64 > worldGenerator_obj.mapSize - 128)
 					{
 					    soldiersEnemy[i].destinationPosX += 64;
 						success = true;
 					}
 					else
 					{
-						soldiersEnemy[i].destinationPosX = soldiersEnemy_obj.lastSavePosX;
-						soldiersEnemy[i].destinationPosY = soldiersEnemy_obj.lastSavePosY;
-						moveDir = choose(0, 1, 2, 3);
+						soldiersEnemy[i].destinationPosX -= 64;
+						success = true;
 					}
 					break;
 				case 1:
@@ -45,39 +44,41 @@ for (j = 0; j < soldiersEnemy_obj.steps; j++)
 					}
 					else
 					{
-						soldiersEnemy[i].destinationPosX = soldiersEnemy_obj.lastSavePosX;
-						soldiersEnemy[i].destinationPosY = soldiersEnemy_obj.lastSavePosY;
-						moveDir = choose(0, 1, 2, 3);
+						soldiersEnemy[i].destinationPosX += 64;
+						success = true;
 					}
 					break;
 				case 2:
-					if !(place_meeting(soldiersEnemy[i].x, soldiersEnemy[i].y + 64, obstacle_obj) && soldiersEnemy[i].y + 64 > worldGenerator_obj.mapSize - 64)
+					if !(place_meeting(soldiersEnemy[i].x, soldiersEnemy[i].y + 64, obstacle_obj) && soldiersEnemy[i].y + 64 > worldGenerator_obj.mapSize - 128)
 					{
 				        soldiersEnemy[i].destinationPosY += 64;
 						success = true;
 					}
 					else
 					{
-						soldiersEnemy[i].destinationPosX = soldiersEnemy_obj.lastSavePosX;
-						soldiersEnemy[i].destinationPosY = soldiersEnemy_obj.lastSavePosY;
-						moveDir = choose(0, 1, 2, 3);
+						soldiersEnemy[i].destinationPosY -= 64;
+						success = true;
 					}
 					break;
 				case 3:
-				    if !(place_meeting(soldiersEnemy[i].x, soldiersEnemy[i].y - 64, obstacle_obj) && soldiersEnemy[i].y - 64 < 64)
+				    if !(place_meeting(soldiersEnemy[i].x, soldiersEnemy[i].y - 64, obstacle_obj) && soldiersEnemy[i].y - 64 < 128)
 					{
 				        soldiersEnemy[i].destinationPosY -= 64;
 						success = true;
 					}
 					else
 					{
-						soldiersEnemy[i].destinationPosX = soldiersEnemy_obj.lastSavePosX;
-						soldiersEnemy[i].destinationPosY = soldiersEnemy_obj.lastSavePosY;
-						moveDir = choose(0, 1, 2, 3);
+						soldiersEnemy[i].destinationPosY += 64;
+						success = true;
 					}
 					break;
 				}
 			}
+		}
+		if (soldiersEnemy[i].destinationPosX == soldiersEnemy[i].x && soldiersEnemy[i].destinationPosY == soldiersEnemy[i].y)
+		{
+			soldiersEnemy[i].destinationPosX = soldiersEnemy[i].lastSavePosX;
+			soldiersEnemy[i].destinationPosY = soldiersEnemy[i].lastSavePosY;
 		}
 		soldiersEnemy[i].moving = true;
 	}
