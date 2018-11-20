@@ -1,85 +1,92 @@
-//Last save position
-for (k = 0; k < instance_number(soldiersEnemy_obj); k++)
+enemyTypes[0] = soldiersEnemy_obj;
+enemyTypes[1] = workersEnemy_obj;
+
+//Iterate through all enemy types
+for (var l = 0; l < array_length_1d(enemyTypes); l++)
 {
-	soldiersEnemy[k] = instance_find(soldiersEnemy_obj, k);
-	soldiersEnemy[k].lastSavePosX = soldiersEnemy[k].x;
-	soldiersEnemy[k].lastSavePosY = soldiersEnemy[k].y;
-}
-
-//Calculate for every step
-for (j = 0; j < soldiersEnemy_obj.steps; j++)
-{	
-	success = false;
-	
-	//Iterate through all instances
-	for (i = 0; i < instance_number(soldiersEnemy_obj); i++)
+	//Last save position
+	for (var k = 0; k < instance_number(enemyTypes[l]); k++)
 	{
-		soldiersEnemy[i] = instance_find(soldiersEnemy_obj, i);
+		enemy[k] = instance_find(enemyTypes[l], k);
+		enemy[k].lastSavePosX = enemy[k].x;
+		enemy[k].lastSavePosY = enemy[k].y;
+	}
 
+	//Calculate for every step
+	for (var j = 0; j < enemyTypes[l].steps; j++)
+	{	
 		success = false;
-		var moveDir = choose(0, 1, 2, 3);
-		
-		while (success == false)
+	
+		//Iterate through all instances
+		for (var i = 0; i < instance_number(enemyTypes[l]); i++)
 		{
+			enemy[i] = instance_find(enemyTypes[l], i);
+
+			success = false;
+			var moveDir = choose(0, 1, 2, 3);
+		
+			while (success == false)
 			{
-			switch (moveDir)
 				{
-				case 0:
-					if !(place_meeting(soldiersEnemy[i].x + 64, soldiersEnemy[i].y, obstacle_obj) && soldiersEnemy[i].x + 64 > worldGenerator_obj.mapSize - 128)
+				switch (moveDir)
 					{
-					    soldiersEnemy[i].destinationPosX += 64;
-						success = true;
+					case 0:
+						if !(place_meeting(enemy[i].x + 64, enemy[i].y, obstacle_obj) && enemy[i].x + 64 > worldGenerator_obj.mapSize - 128)
+						{
+						    enemy[i].destinationPosX += 64;
+							success = true;
+						}
+						else
+						{
+							enemy[i].destinationPosX -= 64;
+							success = true;
+						}
+						break;
+					case 1:
+						if !(place_meeting(enemy[i].x - 64, enemy[i].y, obstacle_obj) && enemy[i].x - 64 < ((worldGenerator_obj.mapSize - worldGenerator_obj.mapSize) + 128))
+						{
+							enemy[i].destinationPosX -= 64;
+							success = true;
+						}
+						else
+						{
+							enemy[i].destinationPosX += 64;
+							success = true;
+						}
+						break;
+					case 2:
+						if !(place_meeting(enemy[i].x, enemy[i].y + 64, obstacle_obj) && enemy[i].y + 64 > worldGenerator_obj.mapSize - 128)
+						{
+					        enemy[i].destinationPosY += 64;
+							success = true;
+						}
+						else
+						{
+							enemy[i].destinationPosY -= 64;
+							success = true;
+						}
+						break;
+					case 3:
+					    if !(place_meeting(enemy[i].x, enemy[i].y - 64, obstacle_obj) && enemy[i].y - 64 < 128)
+						{
+					        enemy[i].destinationPosY -= 64;
+							success = true;
+						}
+						else
+						{
+							enemy[i].destinationPosY += 64;
+							success = true;
+						}
+						break;
 					}
-					else
-					{
-						soldiersEnemy[i].destinationPosX -= 64;
-						success = true;
-					}
-					break;
-				case 1:
-					if !(place_meeting(soldiersEnemy[i].x - 64, soldiersEnemy[i].y, obstacle_obj) && soldiersEnemy[i].x - 64 < ((worldGenerator_obj.mapSize - worldGenerator_obj.mapSize) + 128))
-					{
-						soldiersEnemy[i].destinationPosX -= 64;
-						success = true;
-					}
-					else
-					{
-						soldiersEnemy[i].destinationPosX += 64;
-						success = true;
-					}
-					break;
-				case 2:
-					if !(place_meeting(soldiersEnemy[i].x, soldiersEnemy[i].y + 64, obstacle_obj) && soldiersEnemy[i].y + 64 > worldGenerator_obj.mapSize - 128)
-					{
-				        soldiersEnemy[i].destinationPosY += 64;
-						success = true;
-					}
-					else
-					{
-						soldiersEnemy[i].destinationPosY -= 64;
-						success = true;
-					}
-					break;
-				case 3:
-				    if !(place_meeting(soldiersEnemy[i].x, soldiersEnemy[i].y - 64, obstacle_obj) && soldiersEnemy[i].y - 64 < 128)
-					{
-				        soldiersEnemy[i].destinationPosY -= 64;
-						success = true;
-					}
-					else
-					{
-						soldiersEnemy[i].destinationPosY += 64;
-						success = true;
-					}
-					break;
 				}
 			}
+			if (enemy[i].destinationPosX == enemy[i].x && enemy[i].destinationPosY == enemy[i].y)
+			{
+				enemy[i].destinationPosX = enemy[i].lastSavePosX;
+				enemy[i].destinationPosY = enemy[i].lastSavePosY;
+			}
+			enemy[i].moving = true;
 		}
-		if (soldiersEnemy[i].destinationPosX == soldiersEnemy[i].x && soldiersEnemy[i].destinationPosY == soldiersEnemy[i].y)
-		{
-			soldiersEnemy[i].destinationPosX = soldiersEnemy[i].lastSavePosX;
-			soldiersEnemy[i].destinationPosY = soldiersEnemy[i].lastSavePosY;
-		}
-		soldiersEnemy[i].moving = true;
 	}
 }

@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "2b70135e-1d09-480f-a6ed-2c8927bdff4b",
+            "Value": {
+                "id": "4faeb2e9-7d8c-463e-b2a0-69ebaacff561",
+                "resourcePath": "objects\\workersEnemy_obj\\workersEnemy_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "309a1f56-131c-450c-aa94-fae1c073751b",
             "Value": {
                 "id": "75d429c3-3eed-4dcb-89e2-49fa5e791a6a",

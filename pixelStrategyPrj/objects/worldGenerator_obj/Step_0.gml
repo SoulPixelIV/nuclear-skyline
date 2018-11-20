@@ -56,6 +56,7 @@ if (mapLoading)
 	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 1, enemyBase_obj);
 	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 1, soldiersEnemy_obj);
 	instance_create_layer((baseSpawnX * 64) - 64, baseSpawnY * 64, 1, soldiersEnemy_obj);
+	instance_create_layer(baseSpawnX * 64, (baseSpawnY * 64) + 64, 1, workersEnemy_obj);
 	mapLoading = false;
 }
 
