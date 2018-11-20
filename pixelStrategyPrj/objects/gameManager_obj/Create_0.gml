@@ -8,6 +8,7 @@ money = 500;
 data = 8;
 
 shopMenu = false;
+unitMenu = false;
 
 //Selecting Unit
 mXPos = 0;

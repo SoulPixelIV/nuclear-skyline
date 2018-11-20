@@ -25,6 +25,20 @@ if (gameManager_obj.shopMenu)
 	}
 }
 
+//Unit Menu
+if (gameManager_obj.unitMenu)
+{
+	//Draw Background
+	draw_sprite_ext(menuBackground_spr, 0, 1100, 615, 4, 4, 0, 0, image_alpha);
+	//Draw Text Elements
+	/*
+	if (gameManager_obj.selectedUnit == soldiers_obj)
+	{
+		draw_text(1100, 615, "Unit: " + string(object_get_name(soldiers_obj));
+	}
+	*/
+}
+
 //GameRound
 draw_text(1100, 6, "Round: " + string(gameManager_obj.gameRound));
 
