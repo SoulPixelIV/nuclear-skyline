@@ -41,8 +41,9 @@ if (gameManager_obj.unitMenu)
 	unitName = string(object_get_name(gameManager_obj.selectedUnit.object_index));
 	unitNameCut = string_delete(unitName, string_length(unitName) - 3, 4);
 	draw_text(960, 525, "Unit: " + string(unitNameCut));
-	draw_text(980, 575, "Health: " + string(gameManager_obj.selectedUnit.unitHealth) + " / " + string(gameManager_obj.selectedUnit.unitHealthSave));
-	draw_text(980, 607, "Unit Cost: " + string(gameManager_obj.selectedUnit.unitCost) + "$");
+	draw_text(980, 575, "Health: " + string(gameManager_obj.selectedUnit.unitHealth) + "/" + string(gameManager_obj.selectedUnit.unitHealthSave));
+	draw_text(980, 607, "Damage: " + string(gameManager_obj.selectedUnit.unitDamage));
+	draw_text(980, 639, "Unit Cost: " + string(gameManager_obj.selectedUnit.unitCost) + "$");
 }
 
 //GameRound

@@ -4,6 +4,7 @@
 steps = 1;
 moveSpeed = 1.9;
 unitHealth = 60;
+unitDamage = 5;
 unitCost = 35;
 
 moving = false;

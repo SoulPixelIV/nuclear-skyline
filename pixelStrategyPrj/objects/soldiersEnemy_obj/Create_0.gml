@@ -3,6 +3,7 @@
 //Movement Values
 steps = 2;
 moveSpeed = 2.2;
+unitDamage = 40;
 
 moving = false;
 outOfRange = false;
