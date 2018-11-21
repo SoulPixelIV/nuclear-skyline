@@ -31,12 +31,10 @@ if (gameManager_obj.unitMenu)
 	//Draw Background
 	draw_sprite_ext(menuBackground_spr, 0, 1100, 615, 4, 4, 0, 0, image_alpha);
 	//Draw Text Elements
-	/*
-	if (gameManager_obj.selectedUnit == soldiers_obj)
-	{
-		draw_text(1100, 615, "Unit: " + string(object_get_name(soldiers_obj));
-	}
-	*/
+	unitName = string(object_get_name(gameManager_obj.selectedUnit.object_index));
+	unitNameCut = string_delete(unitName, string_length(unitName) - 3, 4);
+	draw_text(960, 525, "Unit: " + string(unitNameCut));
+	draw_text(980, 575, "Health: " + string(gameManager_obj.selectedUnit.unitHealth) + " / " + string(gameManager_obj.selectedUnit.unitHealthSave));
 }
 
 //GameRound
