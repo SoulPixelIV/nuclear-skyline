@@ -1,3 +1,5 @@
+global.loading = true;
+
 //Iterate through all enemy types
 for (var l = 0; l < array_length_1d(global.enemyTypes); l++)
 {
