@@ -2,6 +2,9 @@
 
 room_speed = 60;
 
+//Calling Scripts
+globalSettings_scr();
+
 //Main Values
 gameRound = 0;
 money = 500;

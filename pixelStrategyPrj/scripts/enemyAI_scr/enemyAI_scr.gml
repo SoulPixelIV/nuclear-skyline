@@ -1,26 +1,23 @@
-enemyTypes[0] = soldiersEnemy_obj;
-enemyTypes[1] = workersEnemy_obj;
-
 //Iterate through all enemy types
-for (var l = 0; l < array_length_1d(enemyTypes); l++)
+for (var l = 0; l < array_length_1d(global.enemyTypes); l++)
 {
 	//Last save position
-	for (var k = 0; k < instance_number(enemyTypes[l]); k++)
+	for (var k = 0; k < instance_number(global.enemyTypes[l]); k++)
 	{
-		enemy[k] = instance_find(enemyTypes[l], k);
+		enemy[k] = instance_find(global.enemyTypes[l], k);
 		enemy[k].lastSavePosX = enemy[k].x;
 		enemy[k].lastSavePosY = enemy[k].y;
 	}
 
 	//Calculate for every step
-	for (var j = 0; j < enemyTypes[l].steps; j++)
+	for (var j = 0; j < global.enemyTypes[l].steps; j++)
 	{	
 		success = false;
 	
 		//Iterate through all instances
-		for (var i = 0; i < instance_number(enemyTypes[l]); i++)
+		for (var i = 0; i < instance_number(global.enemyTypes[l]); i++)
 		{
-			enemy[i] = instance_find(enemyTypes[l], i);
+			enemy[i] = instance_find(global.enemyTypes[l], i);
 
 			success = false;
 			var moveDir = choose(0, 1, 2, 3);
