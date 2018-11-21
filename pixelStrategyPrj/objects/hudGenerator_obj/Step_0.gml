@@ -12,11 +12,8 @@ if (gameManager_obj.shopMenu)
 	}
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
 	{
-		if (gameManager_obj.money > 249)
-		{
-			gameManager_obj.money -= 250;
-			instance_create_layer(mainBase_obj.x + 64, mainBase_obj.y, 1, workers_obj);
-		}
+		gameManager_obj.money -= 250;
+		instance_create_layer(mainBase_obj.x + 64, mainBase_obj.y, 1, workers_obj);
 	}
 }
 		

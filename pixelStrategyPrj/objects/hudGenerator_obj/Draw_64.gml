@@ -5,7 +5,14 @@ draw_sprite(actionWindow_spr, 0, 1184, 128);
 
 //Money
 draw_sprite(moneyIcon_spr, 0, 32, 16);
-draw_text(56, 6, string(gameManager_obj.money));
+if (gameManager_obj.money > 0)
+{
+	draw_text_color(56, 6, string(gameManager_obj.money), c_green, c_green, c_white, c_white, 255);
+}
+else
+{
+	draw_text_color(56, 6, string(gameManager_obj.money), c_red, c_red, c_white, c_white, 255);
+}
 
 //Data
 draw_sprite(dataIcon_spr, 0, 128, 16);
@@ -35,6 +42,7 @@ if (gameManager_obj.unitMenu)
 	unitNameCut = string_delete(unitName, string_length(unitName) - 3, 4);
 	draw_text(960, 525, "Unit: " + string(unitNameCut));
 	draw_text(980, 575, "Health: " + string(gameManager_obj.selectedUnit.unitHealth) + " / " + string(gameManager_obj.selectedUnit.unitHealthSave));
+	draw_text(980, 607, "Unit Cost: " + string(gameManager_obj.selectedUnit.unitCost) + "$");
 }
 
 //GameRound

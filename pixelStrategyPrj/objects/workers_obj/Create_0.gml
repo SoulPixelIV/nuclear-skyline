@@ -4,6 +4,7 @@
 steps = 1;
 moveSpeed = 1.9;
 unitHealth = 60;
+unitCost = 35;
 
 moving = false;
 drawCircle = false;
