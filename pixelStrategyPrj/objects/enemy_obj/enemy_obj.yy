@@ -1,19 +1,10 @@
 {
-    "id": "74ac3f36-40c5-46e5-860c-7fead9fed306",
+    "id": "cc1e42c8-fc7d-4e66-bb75-912be07ab783",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "nextRoundButton_obj",
+    "name": "enemy_obj",
     "eventList": [
-        {
-            "id": "95040fa5-37a0-4015-a7a9-763434576a0b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
-            "m_owner": "74ac3f36-40c5-46e5-860c-7fead9fed306"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "4cea7bc2-6df1-4f8a-b670-fc9731d06372",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

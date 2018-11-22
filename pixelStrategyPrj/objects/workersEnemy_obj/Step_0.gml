@@ -13,6 +13,12 @@ if (moving)
 	moving = false;
 }
 
+//Death
+if (unitHealth <= 0)
+{
+	instance_destroy();
+}
+
 
 
 

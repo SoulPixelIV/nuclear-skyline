@@ -1,4 +1,5 @@
 //Main Values
+global.gameVersion = "Prototype 0.0.1"
 global.loading = false;
 
 //Unit Array

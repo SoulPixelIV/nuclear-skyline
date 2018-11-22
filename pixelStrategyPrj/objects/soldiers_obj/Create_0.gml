@@ -8,10 +8,13 @@ unitDamage = 40;
 unitCost = 45;
 
 moving = false;
+attacking = false;
 drawCircle = false;
 outOfRange = false;
 startPosX = x;
 startPosY = y;
+savePosX = x;
+savePosY = y;
 stepsSave = steps;
 unitHealthSave = unitHealth;
 

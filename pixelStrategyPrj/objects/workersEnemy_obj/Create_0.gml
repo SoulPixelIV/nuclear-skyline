@@ -3,6 +3,7 @@
 //Movement Values
 steps = 1;
 moveSpeed = 1.9;
+unitHealth = 60;
 unitDamage = 5;
 
 moving = false;
@@ -13,6 +14,7 @@ destinationPosX = x;
 destinationPosY = y;
 lastSavePosX = x;
 lastSavePosY = y;
+unitHealthSave = unitHealth;
 
 //Move back in to bounds
 if (place_meeting(x, y, waterTile_obj))

@@ -3,6 +3,11 @@
 draw_sprite(HUDStatline_spr, 0, 0, 0);
 draw_sprite(actionWindow_spr, 0, 1184, 128);
 
+//Debug
+draw_text(32, 72, "Nuclear Skyline Version: " + string(global.gameVersion));
+draw_text(32, 104, string(room_speed));
+draw_text(32, 136, string(fps_real));
+
 //Money
 draw_sprite(moneyIcon_spr, 0, 32, 16);
 if (gameManager_obj.money > 0)

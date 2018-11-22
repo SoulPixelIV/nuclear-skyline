@@ -1,7 +1,5 @@
 /// @description Start next round
 
-if !(global.loading)
-{
-	nextRound_scr();
-}
+nextRound_scr();
+
 

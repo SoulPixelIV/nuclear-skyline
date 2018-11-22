@@ -12,6 +12,8 @@ drawCircle = false;
 outOfRange = false;
 startPosX = x;
 startPosY = y;
+savePosX = x;
+savePosY = y;
 stepsSave = steps;
 unitHealthSave = unitHealth;
 
