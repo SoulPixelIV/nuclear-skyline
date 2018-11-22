@@ -20,7 +20,65 @@ for (var l = 0; l < array_length_1d(global.enemyTypes); l++)
 		for (var i = 0; i < instance_number(global.enemyTypes[l]); i++)
 		{
 			enemy[i] = instance_find(global.enemyTypes[l], i);
-
+			/*
+			//Attacking Units
+			with (enemy[i])
+			{
+				if (instance_position(x + 64, y, enemy_obj))
+				{
+					if (irandom(10) < 7)
+					{
+						var unit = instance_position(x + 64, y, enemy_obj);
+						unit.unitHealth -= unitDamage;
+						unitHealth -= (unit.unitDamage / 2);
+					}
+					else
+					{
+						break;
+					}
+				}
+				if (instance_position(x - 64, y, enemy_obj))
+				{
+					if (irandom(10) < 7)
+					{
+						var unit = instance_position(x - 64, y, enemy_obj);
+						unit.unitHealth -= unitDamage;
+						unitHealth -= (unit.unitDamage / 2);
+					}
+					else
+					{
+						break;
+					}
+				}
+				if (instance_position(x, y + 64, enemy_obj))
+				{
+					if (irandom(10) < 7)
+					{
+						var unit = instance_position(x, y + 64, enemy_obj);
+						unit.unitHealth -= unitDamage;
+						unitHealth -= (unit.unitDamage / 2);
+					}
+					else
+					{
+						break;
+					}
+				}
+				if (instance_position(x, y - 64, enemy_obj))
+				{
+					if (irandom(10) < 7)
+					{
+						var unit = instance_position(x, y - 64, enemy_obj);
+						unit.unitHealth -= unitDamage;
+						unitHealth -= (unit.unitDamage / 2);
+					}
+					else
+					{
+						break;
+					}
+				}
+			}
+			*/
+			//Random Movement
 			success = false;
 			var moveDir = choose(0, 1, 2, 3);
 		

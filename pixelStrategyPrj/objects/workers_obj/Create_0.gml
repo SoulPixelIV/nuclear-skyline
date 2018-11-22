@@ -8,6 +8,7 @@ unitDamage = 5;
 unitCost = 35;
 
 moving = false;
+attacking = false;
 drawCircle = false;
 outOfRange = false;
 startPosX = x;
