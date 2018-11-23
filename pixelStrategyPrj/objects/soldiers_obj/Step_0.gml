@@ -23,6 +23,8 @@ if (moving)
 
 if (attacking)
 {
+	image_index = 1;
+	alarm[0] = 60;
 	var enemy = instance_position(gameManager_obj.mXPos, gameManager_obj.mYPos, enemy_obj);
 	enemy.unitHealth -= unitDamage;
 	unitHealth -= (enemy.unitDamage / 2);

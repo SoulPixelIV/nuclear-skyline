@@ -4,7 +4,7 @@
 steps = 1;
 moveSpeed = 1.9;
 unitHealth = 60;
-unitDamage = 5;
+unitDamage = 15;
 unitCost = 35;
 
 moving = false;
@@ -17,6 +17,9 @@ savePosX = x;
 savePosY = y;
 stepsSave = steps;
 unitHealthSave = unitHealth;
+
+//Settings
+image_speed = 0;
 
 //Move back in to bounds
 if (place_meeting(x, y, waterTile_obj))

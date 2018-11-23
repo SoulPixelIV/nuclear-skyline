@@ -1,4 +1,19 @@
-/// @description Back in to bounds
+/// @description AI
+
+if (tickRound < gameManager_obj.gameRound)
+{
+	//Enemy Spawnrate
+	if (irandom(100) < enemySpawnRate)
+	{
+		instance_create_layer(x, y - 64, 1, soldiersEnemy_obj);
+	}
+	//Workers Spawnrate
+	if (irandom(100) < workersSpawnRate)
+	{
+		instance_create_layer(x, y + 64, 1, workersEnemy_obj);
+	}
+	tickRound++;
+}
 
 //Back in to bounds
 if (distance_to_object(mainBase_obj) < 256)

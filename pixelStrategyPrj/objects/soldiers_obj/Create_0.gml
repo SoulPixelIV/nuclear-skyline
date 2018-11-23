@@ -18,6 +18,9 @@ savePosY = y;
 stepsSave = steps;
 unitHealthSave = unitHealth;
 
+//Settings
+image_speed = 0;
+
 //Move back in to bounds
 if (place_meeting(x, y, waterTile_obj))
 {

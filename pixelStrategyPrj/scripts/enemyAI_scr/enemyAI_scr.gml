@@ -26,61 +26,56 @@ for (var l = 0; l < array_length_1d(global.enemyTypes); l++)
 				{
 					if (instance_position(x + 64, y, unit_obj))
 					{
-						if (irandom(10) < 7)
+						if (irandom(10) < 7 && steps > 1)
 						{
+							image_index = 1;
+							alarm[0] = 60;
 							var unit = instance_position(x + 64, y, unit_obj);
 							unit.unitHealth -= unitDamage;
 							unitHealth -= (unit.unitDamage / 2);
-							break;
-						}
-						else
-						{
-							break;
+							steps -= 2;
+							return;
 						}
 					}
 					if (instance_position(x - 64, y, unit_obj))
 					{
-						if (irandom(10) < 7)
+						if (irandom(10) < 7 && steps > 1)
 						{
+							image_index = 1;
+							alarm[0] = 60;
 							var unit = instance_position(x - 64, y, unit_obj);
 							unit.unitHealth -= unitDamage;
 							unitHealth -= (unit.unitDamage / 2);
-							break;
-						}
-						else
-						{
-							break;
+							steps -= 2;
+							return;
 						}
 					}
 					if (instance_position(x, y + 64, unit_obj))
 					{
-						if (irandom(10) < 7)
+						if (irandom(10) < 7 && steps > 1)
 						{
+							image_index = 1;
+							alarm[0] = 60;
 							var unit = instance_position(x, y + 64, unit_obj);
 							unit.unitHealth -= unitDamage;
 							unitHealth -= (unit.unitDamage / 2);
-							break;
-						}
-						else
-						{
-							break;
+							steps -= 2;
+							return;
 						}
 					}
 					if (instance_position(x, y - 64, unit_obj))
 					{
-						if (irandom(10) < 7)
+						if (irandom(10) < 7 && steps > 1)
 						{
+							image_index = 1;
+							alarm[0] = 60;
 							var unit = instance_position(x, y - 64, unit_obj);
 							unit.unitHealth -= unitDamage;
 							unitHealth -= (unit.unitDamage / 2);
-							break;
-						}
-						else
-						{
-							break;
+							steps -= 2;
+							return;
 						}
 					}
-					break;
 				}
 
 				//Random Movement
