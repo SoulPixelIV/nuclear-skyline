@@ -24,9 +24,9 @@ for (var l = 0; l < array_length_1d(global.enemyTypes); l++)
 				//Attacking Units
 				with (enemy[i])
 				{
-					if (instance_position(x + 64, y, unit_obj))
+					if (irandom(10) < 7 && unitHealth > (unitHealthSave / 4))
 					{
-						if (irandom(10) < 7 && steps > 1)
+						if (instance_position(x + 64, y, unit_obj))
 						{
 							image_index = 1;
 							alarm[0] = 60;
@@ -36,10 +36,7 @@ for (var l = 0; l < array_length_1d(global.enemyTypes); l++)
 							steps -= 2;
 							return;
 						}
-					}
-					if (instance_position(x - 64, y, unit_obj))
-					{
-						if (irandom(10) < 7 && steps > 1)
+						if (instance_position(x - 64, y, unit_obj))
 						{
 							image_index = 1;
 							alarm[0] = 60;
@@ -49,10 +46,7 @@ for (var l = 0; l < array_length_1d(global.enemyTypes); l++)
 							steps -= 2;
 							return;
 						}
-					}
-					if (instance_position(x, y + 64, unit_obj))
-					{
-						if (irandom(10) < 7 && steps > 1)
+						if (instance_position(x, y + 64, unit_obj))
 						{
 							image_index = 1;
 							alarm[0] = 60;
@@ -62,10 +56,7 @@ for (var l = 0; l < array_length_1d(global.enemyTypes); l++)
 							steps -= 2;
 							return;
 						}
-					}
-					if (instance_position(x, y - 64, unit_obj))
-					{
-						if (irandom(10) < 7 && steps > 1)
+						if (instance_position(x, y - 64, unit_obj))
 						{
 							image_index = 1;
 							alarm[0] = 60;
