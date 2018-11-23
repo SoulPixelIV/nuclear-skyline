@@ -55,6 +55,12 @@ if (mp_grid_path(global.grid, path, x, y, gameManager_obj.mXPos, gameManager_obj
 	}
 }
 
+//Death
+if (unitHealth <= 0)
+{
+	instance_destroy();
+}
+
 
 
 
