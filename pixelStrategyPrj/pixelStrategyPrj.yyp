@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "396e7ad2-84ff-46f2-9986-26ef409f9db8",
+            "Value": {
+                "id": "64b6582e-201c-4f61-8f9c-261ccd089eb6",
+                "resourcePath": "sprites\\premilitaryTrainingBuilding_spr\\premilitaryTrainingBuilding_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3cc2b69c-593f-4bc9-9e0e-d45da2f90dac",
             "Value": {
                 "id": "95920005-d6cd-4f90-b6fd-695bd10a833f",
