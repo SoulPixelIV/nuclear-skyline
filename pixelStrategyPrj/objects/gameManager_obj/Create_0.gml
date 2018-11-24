@@ -12,6 +12,7 @@ data = 8;
 
 shopMenu = false;
 unitMenu = false;
+workersMenu = false;
 
 //Selecting Unit
 mXPos = 0;

@@ -7,6 +7,11 @@ shopMenuElement[0] = "Workers - 250$";
 shopMenuElement[1] = "XXXXXXXXXXXXXX";
 shopMenuElement[2] = "XXXXXXXXXXXXXX";
 
+//Workers Menu Elements
+workersMenuElement[0] = "Premilitary Training Building - 750$";
+workersMenuElement[1] = "XXXXXXXXXXXXXX";
+workersMenuElement[2] = "XXXXXXXXXXXXXX";
+
 //Cursor Pos
 cursorPos = 0;
 
