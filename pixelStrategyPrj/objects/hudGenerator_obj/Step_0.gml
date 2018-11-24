@@ -1,7 +1,7 @@
 /// @description Menu Selection
 
 //Shop Menu
-if (gameManager_obj.shopMenu)
+if (gameManager_obj.shopMenu && !building)
 {
 	if (keyboard_check_pressed(vk_up) && cursorPos != 0)
 	{
@@ -13,13 +13,17 @@ if (gameManager_obj.shopMenu)
 	}
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
 	{
-		gameManager_obj.money -= 250;
-		instance_create_layer(mainBase_obj.x + 64, mainBase_obj.y, 1, workers_obj);
+		countGameRounds = 6;
+		gameRoundSave = gameManager_obj.gameRound;
+		building = true;
+		itemBought = 0;
+		gameManager_obj.money -= 250;		
+		closingMenus_scr();
 	}
 }
 
 //Workers Menu
-if (gameManager_obj.workersMenu)
+if (gameManager_obj.workersMenu && !building)
 {
 	if (keyboard_check_pressed(vk_up) && cursorPos != 0)
 	{
@@ -31,13 +35,17 @@ if (gameManager_obj.workersMenu)
 	}
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
 	{
+		countGameRounds = 9;
+		gameRoundSave = gameManager_obj.gameRound;
+		building = true;
+		itemBought = 1;
 		gameManager_obj.money -= 750;
-		instance_create_layer(gameManager_obj.selectedUnit.x + 64, gameManager_obj.selectedUnit.y, 1, premilitaryTrainingBuilding_obj);
+		closingMenus_scr();	
 	}
 }
 
 //Premilitary Menu
-if (gameManager_obj.premilitaryMenu)
+if (gameManager_obj.premilitaryMenu && !building)
 {
 	if (keyboard_check_pressed(vk_up) && cursorPos != 0)
 	{
@@ -49,8 +57,36 @@ if (gameManager_obj.premilitaryMenu)
 	}
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
 	{
+		countGameRounds = 4;
+		gameRoundSave = gameManager_obj.gameRound;
+		building = true;
+		itemBought = 2;
 		gameManager_obj.money -= 400;
-		instance_create_layer(gameManager_obj.selectedPremilitary.x + 64, gameManager_obj.selectedPremilitary.y, 1, soldiers_obj);
+		closingMenus_scr();
 	}
 }
-		
+
+//Building Progress
+if (building && gameRoundSave != gameManager_obj.gameRound)
+{
+	countGameRounds -= 1;
+	gameRoundSave++;
+}
+if (building && countGameRounds == 0)
+{
+	building = false;
+		{
+			switch (itemBought)
+			{
+				case 0:
+					instance_create_layer(mainBase_obj.x + 64, mainBase_obj.y, 1, workers_obj);
+					break;
+				case 1:
+					instance_create_layer(gameManager_obj.selectedUnit.x + 64, gameManager_obj.selectedUnit.y, 1, premilitaryTrainingBuilding_obj);
+					break;
+				case 2:
+					instance_create_layer(gameManager_obj.selectedPremilitary.x + 64, gameManager_obj.selectedPremilitary.y, 1, soldiers_obj);
+					break;
+			}
+		}
+}
