@@ -26,3 +26,12 @@ building = false;
 countGameRounds = 0;
 gameRoundSave = 0;
 
+//Sprite Animation
+imageNum = 0;
+imageTime = 1;
+imageMaxNum = 0;
+with (actionWindow_spr)
+{
+	imageMaxNum = image_number;
+}
+

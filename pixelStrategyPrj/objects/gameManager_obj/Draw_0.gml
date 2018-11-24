@@ -2,7 +2,7 @@
 
 if (drawDestination)
 {
-	if (selectedUnit != noone)
+	if !(is_undefined(selectedUnit))
 	{
 		if (selectedUnit.outOfRange)
 		{

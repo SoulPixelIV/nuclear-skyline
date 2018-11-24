@@ -1,7 +1,7 @@
 /// @description Draw HUD Elements
 
 draw_sprite(HUDStatline_spr, 0, 0, 0);
-draw_sprite(actionWindow_spr, 0, 1184, 128);
+draw_sprite(actionWindow_spr, imageNum, 1184, 128);
 
 //Debug
 draw_text(32, 72, "Nuclear Skyline Version: " + string(global.gameVersion));

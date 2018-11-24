@@ -1,5 +1,20 @@
 /// @description Menu Selection
 
+//Action Window
+imageTime -= 0.1;
+if (imageTime <= 0)
+{
+	if (imageNum < imageMaxNum)
+	{
+		imageNum++;
+	}
+	else
+	{
+		imageNum = 0;
+	}
+	imageTime = 0.1;
+}
+
 //Shop Menu
 if (gameManager_obj.shopMenu && !building)
 {
