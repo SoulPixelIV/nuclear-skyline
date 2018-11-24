@@ -51,6 +51,20 @@ if (gameManager_obj.workersMenu)
 	}
 }
 
+//Premilitary Menu
+if (gameManager_obj.premilitaryMenu)
+{
+	//Draw Background
+	draw_sprite_ext(menuBackground_spr, 0, 640, 360, 10, 10, 0, 0, image_alpha);
+	//Draw Cursor
+	draw_sprite(cursor_spr, 0, 400, 152 + (cursorPos * 32));
+	//Draw Text Elements
+	for (i = 0; i < array_length_1d(premilitaryMenuElement); i++)
+	{
+		draw_text(256, 140 + (i * 32), premilitaryMenuElement[i]);
+	}
+}
+
 //Unit Menu
 if (gameManager_obj.unitMenu)
 {

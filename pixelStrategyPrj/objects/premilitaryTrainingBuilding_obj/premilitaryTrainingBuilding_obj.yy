@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "premilitaryTrainingBuilding_obj",
     "eventList": [
-        
+        {
+            "id": "3bbfb658-7009-4acb-8d75-7a434bddcfdd",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 6,
+            "m_owner": "49dffc80-5e61-454e-9b07-5028f01cc49f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

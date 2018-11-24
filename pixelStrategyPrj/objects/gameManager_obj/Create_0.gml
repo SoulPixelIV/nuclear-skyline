@@ -13,6 +13,8 @@ data = 8;
 shopMenu = false;
 unitMenu = false;
 workersMenu = false;
+premilitaryMenu = false;
+selectedPremilitary = noone;
 
 //Selecting Unit
 mXPos = 0;
