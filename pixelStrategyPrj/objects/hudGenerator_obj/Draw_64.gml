@@ -71,12 +71,15 @@ if (gameManager_obj.unitMenu)
 	//Draw Background
 	draw_sprite_ext(menuBackground_spr, 0, 1100, 615, 4, 4, 0, 0, image_alpha);
 	//Draw Text Elements
-	unitName = string(object_get_name(gameManager_obj.selectedUnit.object_index));
-	unitNameCut = string_delete(unitName, string_length(unitName) - 3, 4);
-	draw_text(960, 525, "Unit: " + string(unitNameCut));
-	draw_text(980, 575, "Health: " + string(gameManager_obj.selectedUnit.unitHealth) + "/" + string(gameManager_obj.selectedUnit.unitHealthSave));
-	draw_text(980, 607, "Damage: " + string(gameManager_obj.selectedUnit.unitDamage));
-	draw_text(980, 639, "Unit Cost: " + string(gameManager_obj.selectedUnit.unitCost) + "$");
+	if (gameManager_obj.selectedUnit != noone)
+	{
+		unitName = string(object_get_name(gameManager_obj.selectedUnit.object_index));
+		unitNameCut = string_delete(unitName, string_length(unitName) - 3, 4);
+		draw_text(960, 525, "Unit: " + string(unitNameCut));
+		draw_text(980, 575, "Health: " + string(gameManager_obj.selectedUnit.unitHealth) + "/" + string(gameManager_obj.selectedUnit.unitHealthSave));
+		draw_text(980, 607, "Damage: " + string(gameManager_obj.selectedUnit.unitDamage));
+		draw_text(980, 639, "Unit Cost: " + string(gameManager_obj.selectedUnit.unitCost) + "$");
+	}
 }
 
 //GameRound
