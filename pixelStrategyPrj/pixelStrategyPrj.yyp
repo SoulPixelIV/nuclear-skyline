@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "dcdc161f-59d7-42d6-87b5-d504ccc0f60a",
+            "Value": {
+                "id": "64facf15-88a4-416c-966d-420c7b866360",
+                "resourcePath": "objects\\premilitaryTrainingBuildingEnemy_obj\\premilitaryTrainingBuildingEnemy_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "dded6d30-f941-4fc6-815f-1e2513f63e08",
             "Value": {
                 "id": "3cf6d9c8-1ace-458b-83c3-e06958343272",

@@ -2,7 +2,7 @@
 
 if (drawDestination)
 {
-	if !(is_undefined(selectedUnit))
+	if (selectedUnit == workers_obj || selectedUnit == soldiers_obj)
 	{
 		if (selectedUnit.outOfRange)
 		{
