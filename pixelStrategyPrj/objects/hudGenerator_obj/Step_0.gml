@@ -12,7 +12,7 @@ if (imageTime <= 0)
 	{
 		imageNum = 0;
 	}
-	imageTime = 0.1;
+	imageTime = 6;
 }
 
 //Shop Menu

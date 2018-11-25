@@ -1,6 +1,4 @@
-/// @description Interactable HUD
-
-instance_create_layer(1056, 480, 0, nextRoundButton_obj);
+/// @description Vars
 
 //Shop Menu Elements
 shopMenuElement[0] = "Workers - 250$ 6Rounds";
@@ -28,10 +26,6 @@ gameRoundSave = 0;
 
 //Sprite Animation
 imageNum = 0;
-imageTime = 1;
-imageMaxNum = 0;
-with (actionWindow_spr)
-{
-	imageMaxNum = image_number;
-}
+imageTime = 6;
+imageMaxNum = 7;
 

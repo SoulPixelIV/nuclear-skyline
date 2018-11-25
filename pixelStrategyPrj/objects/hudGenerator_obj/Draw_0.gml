@@ -1,6 +1,6 @@
 /// @description Draw Values
 
-if (building)
+if (building && gameManager_obj.selectedUnit != noone)
 {
 	{
 		switch (itemBought)

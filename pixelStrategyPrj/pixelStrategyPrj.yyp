@@ -335,14 +335,6 @@
             }
         },
         {
-            "Key": "74ac3f36-40c5-46e5-860c-7fead9fed306",
-            "Value": {
-                "id": "b88efd52-dae8-43c8-b9a6-834c09f7efaf",
-                "resourcePath": "objects\\nextRoundButton_obj\\nextRoundButton_obj.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7a69d23e-42e4-431e-9fc5-956d3f5cfb57",
             "Value": {
                 "id": "aeb8acaa-0e09-4779-ae7f-f426eb90395f",
@@ -508,6 +500,14 @@
                 "id": "64facf15-88a4-416c-966d-420c7b866360",
                 "resourcePath": "objects\\premilitaryTrainingBuildingEnemy_obj\\premilitaryTrainingBuildingEnemy_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dd02473a-84e6-412d-9683-05d5d47f03df",
+            "Value": {
+                "id": "113f6b84-9620-4f5f-9e04-da21b2550d1c",
+                "resourcePath": "sprites\\HUDRoundButton_spr\\HUDRoundButton_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

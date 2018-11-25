@@ -3,6 +3,10 @@
 draw_sprite(HUDStatline_spr, 0, 0, 0);
 draw_sprite(actionWindow_spr, imageNum, 1184, 128);
 
+//Round Button
+draw_sprite(HUDRoundButton_spr, 0, 1008, 480);
+draw_text(1068, 488, "Next Round [R]");
+
 //Debug
 draw_text(32, 72, "Nuclear Skyline Version: " + string(global.gameVersion));
 draw_text(32, 104, string(room_speed));
@@ -29,7 +33,8 @@ if (gameManager_obj.shopMenu)
 	//Draw Background
 	draw_sprite_ext(menuBackground_spr, 0, 640, 360, 10, 10, 0, 0, image_alpha);
 	//Draw Cursor
-	draw_sprite(cursor_spr, 0, 400, 152 + (cursorPos * 32));
+	var itemLength = string_width(shopMenuElement[cursorPos]) + 288
+	draw_sprite(cursor_spr, 0, itemLength, 152 + (cursorPos * 32));
 	//Draw Text Elements
 	for (i = 0; i < array_length_1d(shopMenuElement); i++)
 	{
@@ -43,7 +48,8 @@ if (gameManager_obj.workersMenu)
 	//Draw Background
 	draw_sprite_ext(menuBackground_spr, 0, 640, 360, 10, 10, 0, 0, image_alpha);
 	//Draw Cursor
-	draw_sprite(cursor_spr, 0, 400, 152 + (cursorPos * 32));
+	var itemLength = string_width(workersMenuElement[cursorPos]) + 288
+	draw_sprite(cursor_spr, 0, itemLength, 152 + (cursorPos * 32));
 	//Draw Text Elements
 	for (i = 0; i < array_length_1d(workersMenuElement); i++)
 	{
@@ -57,7 +63,8 @@ if (gameManager_obj.premilitaryMenu)
 	//Draw Background
 	draw_sprite_ext(menuBackground_spr, 0, 640, 360, 10, 10, 0, 0, image_alpha);
 	//Draw Cursor
-	draw_sprite(cursor_spr, 0, 400, 152 + (cursorPos * 32));
+	var itemLength = string_width(premilitaryMenuElement[cursorPos]) + 288
+	draw_sprite(cursor_spr, 0, itemLength, 152 + (cursorPos * 32));
 	//Draw Text Elements
 	for (i = 0; i < array_length_1d(premilitaryMenuElement); i++)
 	{
