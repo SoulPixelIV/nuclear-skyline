@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "ca879a10-5055-4b64-8099-56deccc80bbe",
+            "Value": {
+                "id": "4996e6bf-03d6-4f7a-a675-e142982049c9",
+                "resourcePath": "sprites\\premilitaryTrainingBuildingEnemy_spr\\premilitaryTrainingBuildingEnemy_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc1e42c8-fc7d-4e66-bb75-912be07ab783",
             "Value": {
                 "id": "2d7ea9f2-a757-4e13-9c69-a5efba8d9aa2",
