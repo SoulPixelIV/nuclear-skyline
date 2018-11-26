@@ -57,6 +57,15 @@ if (gameManager_obj.workersMenu && !building)
 		gameManager_obj.money -= 750;
 		closingMenus_scr();	
 	}
+	if (keyboard_check_pressed(vk_enter) && cursorPos == 1)
+	{
+		countGameRounds = 18;
+		gameRoundSave = gameManager_obj.gameRound;
+		building = true;
+		itemBought = 3;
+		gameManager_obj.money -= 430;
+		closingMenus_scr();	
+	}
 }
 
 //Premilitary Menu
@@ -101,6 +110,9 @@ if (building && countGameRounds == 0)
 					break;
 				case 2:
 					instance_create_layer(gameManager_obj.selectedPremilitary.x + 64, gameManager_obj.selectedPremilitary.y, 1, soldiers_obj);
+					break;
+				case 3:
+					instance_create_layer(gameManager_obj.selectedUnit.x + 64, gameManager_obj.selectedUnit.y, 1, ironFactory_obj);
 					break;
 			}
 		}

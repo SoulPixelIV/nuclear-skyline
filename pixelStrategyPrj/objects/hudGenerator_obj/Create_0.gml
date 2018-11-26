@@ -7,7 +7,7 @@ shopMenuElement[2] = "XXXXXXXXXXXXXX";
 
 //Workers Menu Elements
 workersMenuElement[0] = "Premilitary Training Building - 750$ 9Rounds";
-workersMenuElement[1] = "XXXXXXXXXXXXXX";
+workersMenuElement[1] = "Iron Factory - 430$ 18Rounds";
 workersMenuElement[2] = "XXXXXXXXXXXXXX";
 
 //Premilitary Menu Elements

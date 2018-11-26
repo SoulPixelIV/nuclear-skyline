@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "96e755a3-7c0f-4ce7-a22d-d63cc4a5573c",
+            "Value": {
+                "id": "6b380720-4587-4174-907e-17e3d53ae064",
+                "resourcePath": "sprites\\ironFactory_spr\\ironFactory_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a6f19023-526a-45dc-ba26-dc368842855e",
             "Value": {
                 "id": "9287cad8-867f-4f3c-a78e-4fb1132559b1",
@@ -419,6 +427,14 @@
             "Value": {
                 "id": "fe3c9c69-f831-48b0-88e2-b1ad8303cb0d",
                 "resourcePath": "objects\\camera_obj\\camera_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bcff2358-bb81-45dc-8ac8-3d5c742aedb8",
+            "Value": {
+                "id": "af4cbd7a-347c-406a-bcc2-0aa636a46c1e",
+                "resourcePath": "objects\\ironFactory_obj\\ironFactory_obj.yy",
                 "resourceType": "GMObject"
             }
         },
