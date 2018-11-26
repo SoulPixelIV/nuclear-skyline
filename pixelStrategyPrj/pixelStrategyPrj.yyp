@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "79ad104d-5597-4638-89ec-a5d4fa73e8f5",
+            "Value": {
+                "id": "631742a3-3920-43f4-b7c8-7fdca6ee8673",
+                "resourcePath": "sprites\\ironFactoryEnemy_spr\\ironFactoryEnemy_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7a69d23e-42e4-431e-9fc5-956d3f5cfb57",
             "Value": {
                 "id": "aeb8acaa-0e09-4779-ae7f-f426eb90395f",
@@ -364,6 +372,14 @@
                 "id": "3ae7f8ce-1a87-4f9b-9b9a-cf43a372663f",
                 "resourcePath": "views\\91380b4b-e98d-4148-ae58-ee1cd06c4870.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9189cbf5-1422-47c9-a979-424a24ed5a2f",
+            "Value": {
+                "id": "a1c2b4b7-a2e8-4c6a-a306-3ea726e0e921",
+                "resourcePath": "objects\\ironFactoryEnemy_obj\\ironFactoryEnemy_obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {
