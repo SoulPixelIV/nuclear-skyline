@@ -19,7 +19,31 @@ if (tickRound < gameManager_obj.gameRound)
 	{
 		var numWorkers = instance_number(workersEnemy_obj);
 		var selectedWorkers = instance_find(workersEnemy_obj, choose(0, numWorkers - 1));
-		instance_create_layer(selectedWorkers.x, selectedWorkers.y - 64, 1, premilitaryTrainingBuildingEnemy_obj);
+		if !(place_meeting(selectedWorkers.x + 64, selectedWorkers.y, waterTile_obj))
+		{
+			instance_create_layer(selectedWorkers.x + 64, selectedWorkers.y, 1, premilitaryTrainingBuildingEnemy_obj);
+		}
+		else
+		{
+			if !(place_meeting(selectedWorkers.x - 64, selectedWorkers.y, waterTile_obj))
+			{
+				instance_create_layer(selectedWorkers.x - 64, selectedWorkers.y, 1, premilitaryTrainingBuildingEnemy_obj);
+			}
+			else
+			{
+				if !(place_meeting(selectedWorkers.x, selectedWorkers.y + 64, waterTile_obj))
+				{
+					instance_create_layer(selectedWorkers.x, selectedWorkers.y + 64, 1, premilitaryTrainingBuildingEnemy_obj);
+				}
+				else
+				{
+					if !(place_meeting(selectedWorkers.x, selectedWorkers.y - 64, waterTile_obj))
+					{
+						instance_create_layer(selectedWorkers.x, selectedWorkers.y - 64, 1, premilitaryTrainingBuildingEnemy_obj);
+					}
+				}
+			}
+		}
 	}
 	//Iron Factory Spawnrate
 	if (irandom(100) < ironFactorySpawnRate && instance_exists(workersEnemy_obj))
