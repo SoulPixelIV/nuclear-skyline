@@ -50,7 +50,43 @@ if (tickRound < gameManager_obj.gameRound)
 	{
 		var numWorkers = instance_number(workersEnemy_obj);
 		var selectedWorkers = instance_find(workersEnemy_obj, choose(0, numWorkers - 1));
-		instance_create_layer(selectedWorkers.x, selectedWorkers.y + 64, 1, ironFactoryEnemy_obj);
+		if !(place_meeting(selectedWorkers.x + 64, selectedWorkers.y, waterTile_obj))
+		{
+			if (place_meeting(selectedWorkers.x + 64, selectedWorkers.y, ironTile_obj))
+			{
+				instance_create_layer(selectedWorkers.x + 64, selectedWorkers.y, 1, ironFactoryEnemy_obj);
+			}
+		}
+		else
+		{
+			if !(place_meeting(selectedWorkers.x - 64, selectedWorkers.y, waterTile_obj))
+			{
+				if (place_meeting(selectedWorkers.x - 64, selectedWorkers.y, ironTile_obj))
+				{
+					instance_create_layer(selectedWorkers.x - 64, selectedWorkers.y, 1, ironFactoryEnemy_obj);
+				}
+			}
+			else
+			{
+				if !(place_meeting(selectedWorkers.x, selectedWorkers.y + 64, waterTile_obj))
+				{
+					if (place_meeting(selectedWorkers.x, selectedWorkers.y + 64, ironTile_obj))
+					{
+						instance_create_layer(selectedWorkers.x, selectedWorkers.y + 64, 1, ironFactoryEnemy_obj);
+					}
+				}
+				else
+				{
+					if !(place_meeting(selectedWorkers.x, selectedWorkers.y - 64, waterTile_obj))
+					{
+						if (place_meeting(selectedWorkers.x, selectedWorkers.y - 64, ironTile_obj))
+						{
+							instance_create_layer(selectedWorkers.x, selectedWorkers.y - 64, 1, ironFactoryEnemy_obj);
+						}
+					}
+				}
+			}
+		}
 	}	
 	tickRound++;
 }
