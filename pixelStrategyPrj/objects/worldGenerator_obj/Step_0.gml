@@ -21,9 +21,13 @@ if (mapLoading)
 		for (posX = 64; posX < global.sizeX; posX += 64)
 		{
 			//Watertile Creation
-			if (random(100) < waterPossibility)
+			if (irandom(100) < waterPossibility)
 			{
 				instance_create_layer(posX, posY, 2, waterTile_obj);
+			}
+			else if (irandom(100) < ironPossibility)
+			{
+				instance_create_layer(posX, posY, 2, ironTile_obj);
 			}
 			else
 			{
@@ -36,7 +40,7 @@ if (mapLoading)
 					instance_position(worldGenerator_obj.posX, worldGenerator_obj.posY + 64, waterTile_obj) == waterTile_obj && 
 					instance_position(worldGenerator_obj.posX, worldGenerator_obj.posY - 64, waterTile_obj) == waterTile_obj)
 					{
-						if (random(100) < worldGenerator_obj.islandPossibility)
+						if (irandom(100) < worldGenerator_obj.islandPossibility)
 						{
 							instance_destroy();
 						}
