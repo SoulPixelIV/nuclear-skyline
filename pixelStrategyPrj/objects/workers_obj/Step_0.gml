@@ -1,6 +1,6 @@
 /// @description Drag Movement
 
-if (moving)
+if (moving && !hudGenerator_obj.building)
 {	
     path = path_add();
     if (mp_grid_path(global.grid, path, x, y, gameManager_obj.mXPos, gameManager_obj.mYPos, 0))

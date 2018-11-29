@@ -103,16 +103,16 @@ if (building && countGameRounds == 0)
 			switch (itemBought)
 			{
 				case 0:
-					instance_create_layer(mainBase_obj.x + 64, mainBase_obj.y, 1, workers_obj);
+					instance_create_layer(mainBase_obj.x - 64, mainBase_obj.y, 1, workers_obj);
 					break;
 				case 1:
-					instance_create_layer(gameManager_obj.selectedUnit.x + 64, gameManager_obj.selectedUnit.y, 1, premilitaryTrainingBuilding_obj);
+					instance_create_layer(gameManager_obj.selectedUnit.x, gameManager_obj.selectedUnit.y, 1, premilitaryTrainingBuilding_obj);
 					break;
 				case 2:
-					instance_create_layer(gameManager_obj.selectedPremilitary.x + 64, gameManager_obj.selectedPremilitary.y, 1, soldiers_obj);
+					instance_create_layer(gameManager_obj.selectedPremilitary.x, gameManager_obj.selectedPremilitary.y, 1, soldiers_obj);
 					break;
 				case 3:
-					instance_create_layer(gameManager_obj.selectedUnit.x + 64, gameManager_obj.selectedUnit.y, 1, ironFactory_obj);
+					instance_create_layer(gameManager_obj.selectedUnit.x, gameManager_obj.selectedUnit.y, 1, ironFactory_obj);
 					break;
 			}
 		}
