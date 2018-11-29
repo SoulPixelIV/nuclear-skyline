@@ -63,14 +63,17 @@ if (gameManager_obj.workersMenu && !building)
 	}
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 1)
 	{
-		countGameRounds = 18;
-		gameRoundSave = gameManager_obj.gameRound;
-		building = true;
-		itemBought = 3;
-		gameManager_obj.money -= 430;
 		selectedUnit = gameManager_obj.selectedUnit;
 		selectedPremilitary = gameManager_obj.selectedPremilitary
-		closingMenus_scr();	
+		if (place_meeting(selectedUnit.x, selectedUnit.y, ironTile_obj))
+		{
+			countGameRounds = 18;
+			gameRoundSave = gameManager_obj.gameRound;
+			building = true;
+			itemBought = 3;
+			gameManager_obj.money -= 430;
+			closingMenus_scr();
+		}
 	}
 }
 
