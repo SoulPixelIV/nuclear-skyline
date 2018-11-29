@@ -32,7 +32,9 @@ if (gameManager_obj.shopMenu && !building)
 		gameRoundSave = gameManager_obj.gameRound;
 		building = true;
 		itemBought = 0;
-		gameManager_obj.money -= 250;		
+		gameManager_obj.money -= 250;
+		selectedUnit = gameManager_obj.selectedUnit;
+		selectedPremilitary = gameManager_obj.selectedPremilitary
 		closingMenus_scr();
 	}
 }
@@ -55,6 +57,8 @@ if (gameManager_obj.workersMenu && !building)
 		building = true;
 		itemBought = 1;
 		gameManager_obj.money -= 750;
+		selectedUnit = gameManager_obj.selectedUnit;
+		selectedPremilitary = gameManager_obj.selectedPremilitary
 		closingMenus_scr();	
 	}
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 1)
@@ -64,6 +68,8 @@ if (gameManager_obj.workersMenu && !building)
 		building = true;
 		itemBought = 3;
 		gameManager_obj.money -= 430;
+		selectedUnit = gameManager_obj.selectedUnit;
+		selectedPremilitary = gameManager_obj.selectedPremilitary
 		closingMenus_scr();	
 	}
 }
@@ -86,6 +92,8 @@ if (gameManager_obj.premilitaryMenu && !building)
 		building = true;
 		itemBought = 2;
 		gameManager_obj.money -= 400;
+		selectedUnit = gameManager_obj.selectedUnit;
+		selectedPremilitary = gameManager_obj.selectedPremilitary
 		closingMenus_scr();
 	}
 }
@@ -106,13 +114,13 @@ if (building && countGameRounds == 0)
 					instance_create_layer(mainBase_obj.x - 64, mainBase_obj.y, 1, workers_obj);
 					break;
 				case 1:
-					instance_create_layer(gameManager_obj.selectedUnit.x, gameManager_obj.selectedUnit.y, 1, premilitaryTrainingBuilding_obj);
+					instance_create_layer(selectedUnit.x, selectedUnit.y, 1, premilitaryTrainingBuilding_obj);
 					break;
 				case 2:
-					instance_create_layer(gameManager_obj.selectedPremilitary.x, gameManager_obj.selectedPremilitary.y, 1, soldiers_obj);
+					instance_create_layer(selectedPremilitary.x, selectedPremilitary.y, 1, soldiers_obj);
 					break;
 				case 3:
-					instance_create_layer(gameManager_obj.selectedUnit.x, gameManager_obj.selectedUnit.y, 1, ironFactory_obj);
+					instance_create_layer(selectedUnit.x, selectedUnit.y, 1, ironFactory_obj);
 					break;
 			}
 		}

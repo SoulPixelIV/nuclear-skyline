@@ -29,3 +29,7 @@ imageNum = 0;
 imageTime = 6;
 imageMaxNum = 7;
 
+//Units
+selectedUnit = noone;
+selectedPremilitary = noone;
+
