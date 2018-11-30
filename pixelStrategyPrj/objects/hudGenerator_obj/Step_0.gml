@@ -33,8 +33,6 @@ if (gameManager_obj.shopMenu && !building)
 		building = true;
 		itemBought = 0;
 		gameManager_obj.money -= 250;
-		selectedUnit = gameManager_obj.selectedUnit;
-		selectedPremilitary = gameManager_obj.selectedPremilitary
 		closingMenus_scr();
 	}
 }
@@ -58,13 +56,11 @@ if (gameManager_obj.workersMenu && !building)
 		itemBought = 1;
 		gameManager_obj.money -= 750;
 		selectedUnit = gameManager_obj.selectedUnit;
-		selectedPremilitary = gameManager_obj.selectedPremilitary
 		closingMenus_scr();	
 	}
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 1)
 	{
 		selectedUnit = gameManager_obj.selectedUnit;
-		selectedPremilitary = gameManager_obj.selectedPremilitary
 		if (place_meeting(selectedUnit.x, selectedUnit.y, ironTile_obj))
 		{
 			countGameRounds = 18;
@@ -95,8 +91,7 @@ if (gameManager_obj.premilitaryMenu && !building)
 		building = true;
 		itemBought = 2;
 		gameManager_obj.money -= 400;
-		selectedUnit = gameManager_obj.selectedUnit;
-		selectedPremilitary = gameManager_obj.selectedPremilitary
+		selectedPremilitary = gameManager_obj.selectedPremilitary;
 		closingMenus_scr();
 	}
 }
@@ -127,4 +122,6 @@ if (building && countGameRounds == 0)
 					break;
 			}
 		}
+	selectedUnit = noone;
+	selectedPremilitary = noone;
 }
