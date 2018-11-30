@@ -16,7 +16,7 @@ if (imageTime <= 0)
 }
 
 //Shop Menu
-if (gameManager_obj.shopMenu && !building)
+if (gameManager_obj.shopMenu)
 {
 	if (keyboard_check_pressed(vk_up) && cursorPos != 0)
 	{
@@ -26,7 +26,7 @@ if (gameManager_obj.shopMenu && !building)
 	{
 		cursorPos++;
 	}
-	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
+	if (keyboard_check_pressed(vk_enter) && cursorPos == 0 && itemBought != 0)
 	{
 		countGameRounds = 6;
 		gameRoundSave = gameManager_obj.gameRound;
@@ -38,7 +38,7 @@ if (gameManager_obj.shopMenu && !building)
 }
 
 //Workers Menu
-if (gameManager_obj.workersMenu && !building)
+if (gameManager_obj.workersMenu)
 {
 	if (keyboard_check_pressed(vk_up) && cursorPos != 0)
 	{
@@ -48,7 +48,7 @@ if (gameManager_obj.workersMenu && !building)
 	{
 		cursorPos++;
 	}
-	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
+	if (keyboard_check_pressed(vk_enter) && cursorPos == 0 && itemBought != 1)
 	{
 		countGameRounds = 9;
 		gameRoundSave = gameManager_obj.gameRound;
@@ -58,7 +58,7 @@ if (gameManager_obj.workersMenu && !building)
 		selectedUnit = gameManager_obj.selectedUnit;
 		closingMenus_scr();	
 	}
-	if (keyboard_check_pressed(vk_enter) && cursorPos == 1)
+	if (keyboard_check_pressed(vk_enter) && cursorPos == 1 && itemBought != 3)
 	{
 		selectedUnit = gameManager_obj.selectedUnit;
 		if (place_meeting(selectedUnit.x, selectedUnit.y, ironTile_obj))
@@ -74,7 +74,7 @@ if (gameManager_obj.workersMenu && !building)
 }
 
 //Premilitary Menu
-if (gameManager_obj.premilitaryMenu && !building)
+if (gameManager_obj.premilitaryMenu)
 {
 	if (keyboard_check_pressed(vk_up) && cursorPos != 0)
 	{
@@ -84,7 +84,7 @@ if (gameManager_obj.premilitaryMenu && !building)
 	{
 		cursorPos++;
 	}
-	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
+	if (keyboard_check_pressed(vk_enter) && cursorPos == 0 && itemBought != 2)
 	{
 		countGameRounds = 4;
 		gameRoundSave = gameManager_obj.gameRound;
