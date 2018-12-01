@@ -17,7 +17,7 @@ premilitaryMenuElement[2] = "XXXXXXXXXXXXXX";
 
 //Cursor Pos
 cursorPos = 0;
-itemBought = -1;
+itemBought = 0;
 
 //RoundCount
 building = false;
