@@ -1,6 +1,6 @@
 /// @description Drag Movement
 
-if (moving && hudGenerator_obj.selectedUnit != id)
+if (moving && !building)
 {	
     path = path_add();
     if (mp_grid_path(global.grid, path, x, y, gameManager_obj.mXPos, gameManager_obj.mYPos, 0))
@@ -59,6 +59,28 @@ if (unitHealth <= 0)
 	gameManager_obj.selectedUnit = noone;
 	closingMenus_scr();
 	instance_destroy();
+}
+
+//Building Progress
+if (building && gameRoundSave != gameManager_obj.gameRound)
+{
+	countGameRounds -= 1;
+	gameRoundSave++;
+}
+if (building && countGameRounds == 0)
+{
+	building = false;
+		{
+			switch (itemBought)
+			{
+				case 1:
+					instance_create_layer(x, y, 1, premilitaryTrainingBuilding_obj);
+					break;
+				case 2:
+					instance_create_layer(x, y, 1, ironFactory_obj);
+					break;
+			}
+		}
 }
 
 

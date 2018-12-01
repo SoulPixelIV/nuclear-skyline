@@ -18,6 +18,12 @@ savePosY = y;
 stepsSave = steps;
 unitHealthSave = unitHealth;
 
+//Building
+countGameRounds = 0;
+gameRoundSave = 0;
+building = false;
+itemBought = -1;
+
 //Settings
 image_speed = 0;
 

@@ -26,12 +26,12 @@ if (gameManager_obj.shopMenu)
 	{
 		cursorPos++;
 	}
-	if (keyboard_check_pressed(vk_enter) && cursorPos == 0 && itemBought != 0)
+	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
 	{
 		countGameRounds = 6;
 		gameRoundSave = gameManager_obj.gameRound;
 		building = true;
-		itemBought = 0;
+		itemBought = 1;
 		gameManager_obj.money -= 250;
 		closingMenus_scr();
 	}
@@ -48,25 +48,23 @@ if (gameManager_obj.workersMenu)
 	{
 		cursorPos++;
 	}
-	if (keyboard_check_pressed(vk_enter) && cursorPos == 0 && itemBought != 1)
+	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
 	{
-		countGameRounds = 9;
-		gameRoundSave = gameManager_obj.gameRound;
-		building = true;
-		itemBought = 1;
+		selectedUnit.countGameRounds = 9;
+		selectedUnit.gameRoundSave = gameManager_obj.gameRound;
+		selectedUnit.building = true;
+		selectedUnit.itemBought = 1;
 		gameManager_obj.money -= 750;
-		selectedUnit = gameManager_obj.selectedUnit;
 		closingMenus_scr();	
 	}
-	if (keyboard_check_pressed(vk_enter) && cursorPos == 1 && itemBought != 3)
+	if (keyboard_check_pressed(vk_enter) && cursorPos == 1)
 	{
-		selectedUnit = gameManager_obj.selectedUnit;
 		if (place_meeting(selectedUnit.x, selectedUnit.y, ironTile_obj))
 		{
-			countGameRounds = 18;
-			gameRoundSave = gameManager_obj.gameRound;
-			building = true;
-			itemBought = 3;
+			selectedUnit.countGameRounds = 18;
+			selectedUnit.gameRoundSave = gameManager_obj.gameRound;
+			selectedUnit.building = true;
+			selectedUnit.itemBought = 2;
 			gameManager_obj.money -= 430;
 			closingMenus_scr();
 		}
@@ -86,12 +84,11 @@ if (gameManager_obj.premilitaryMenu)
 	}
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 0 && itemBought != 2)
 	{
-		countGameRounds = 4;
-		gameRoundSave = gameManager_obj.gameRound;
-		building = true;
-		itemBought = 2;
+		selectedPremilitary.countGameRounds = 4;
+		selectedPremilitary.gameRoundSave = gameManager_obj.gameRound;
+		selectedPremilitary.building = true;
+		selectedPremilitary.itemBought = 1;
 		gameManager_obj.money -= 400;
-		selectedPremilitary = gameManager_obj.selectedPremilitary;
 		closingMenus_scr();
 	}
 }
@@ -108,20 +105,9 @@ if (building && countGameRounds == 0)
 		{
 			switch (itemBought)
 			{
-				case 0:
-					instance_create_layer(mainBase_obj.x - 64, mainBase_obj.y, 1, workers_obj);
-					break;
 				case 1:
-					instance_create_layer(selectedUnit.x, selectedUnit.y, 1, premilitaryTrainingBuilding_obj);
-					break;
-				case 2:
-					instance_create_layer(selectedPremilitary.x, selectedPremilitary.y, 1, soldiers_obj);
-					break;
-				case 3:
-					instance_create_layer(selectedUnit.x, selectedUnit.y, 1, ironFactory_obj);
+					instance_create_layer(mainBase_obj.x - 64, mainBase_obj.y, 1, workers_obj);
 					break;
 			}
 		}
-	selectedUnit = noone;
-	selectedPremilitary = noone;
 }
