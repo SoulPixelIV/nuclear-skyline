@@ -4,7 +4,6 @@ if (visibility_scr(id))
 {
 	vision = true;
 	sprite_index = grassTile_spr;
-	image_index = 0;
 	layer = 2;
 }
 else
@@ -12,11 +11,11 @@ else
 	layer = 1;
 	if (vision)
 	{
-		image_index = 1;
+		sprite_index = grassTileDark_spr;
 	}
 	else
 	{
 		sprite_index = cloudTile_spr;
 	}
 }
-alarm[0] = 100;
+alarm[0] = 30;

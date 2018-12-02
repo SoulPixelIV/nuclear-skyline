@@ -4,7 +4,7 @@ if (visibility_scr(id))
 {
 	vision = true;
 	sprite_index = ironTile_spr;
-	image_index = 0;
+	image_speed = 0.6;
 	layer = 2;
 }
 else
@@ -12,11 +12,11 @@ else
 	layer = 1;
 	if (vision)
 	{
-		image_index = image_number - 1;
+		sprite_index = ironTileDark_spr;
 	}
 	else
 	{
 		sprite_index = cloudTile_spr;
 	}
 }
-alarm[1] = 100;
+alarm[1] = 30;

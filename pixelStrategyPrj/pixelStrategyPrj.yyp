@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "2a10d515-b640-42c2-82c9-e0c7082ee5b1",
+            "Value": {
+                "id": "d97fe8d2-dff7-4a4c-98e8-ec507a39e6a9",
+                "resourcePath": "sprites\\ironTileDark_spr\\ironTileDark_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2a355ee7-9a02-4bdc-acaf-0f924da121f7",
             "Value": {
                 "id": "0a131db0-15f7-41bd-af0f-2ee5323bb569",
@@ -244,6 +252,14 @@
                 "id": "0f2287f8-29d1-4835-99a0-c29d1d7204ea",
                 "resourcePath": "views\\46a0c55b-1322-40e6-8acc-9e9c32f47f36.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4825f235-ebe3-47cc-83af-e8fa947ddd25",
+            "Value": {
+                "id": "b8c31db1-a490-44cb-820e-ac2b59ab27b2",
+                "resourcePath": "sprites\\grassTileDark_spr\\grassTileDark_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -588,6 +604,14 @@
                 "id": "d287527a-95e1-400f-9ea8-a7b3ef39cb0b",
                 "resourcePath": "objects\\waterPossibilityIcon_obj\\waterPossibilityIcon_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "de609c5e-50d5-4f89-9fbd-cefafb856c65",
+            "Value": {
+                "id": "ccd6054b-99de-4106-8507-856935f46c9c",
+                "resourcePath": "sprites\\waterTileDark_spr\\waterTileDark_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
