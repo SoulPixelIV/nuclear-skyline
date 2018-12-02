@@ -26,13 +26,14 @@ if (gameManager_obj.shopMenu)
 	{
 		cursorPos++;
 	}
+	//Workers
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
 	{
-		countGameRounds = 6;
+		countGameRounds = 8;
 		gameRoundSave = gameManager_obj.gameRound;
 		building = true;
 		itemBought = 1;
-		gameManager_obj.money -= 250;
+		gameManager_obj.money -= 450;
 		closingMenus_scr();
 	}
 }
@@ -48,26 +49,19 @@ if (gameManager_obj.workersMenu)
 	{
 		cursorPos++;
 	}
+	//Premilitary
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 0)
 	{
-		selectedUnit.countGameRounds = 9;
+		selectedUnit.countGameRounds = 15;
 		selectedUnit.gameRoundSave = gameManager_obj.gameRound;
 		selectedUnit.building = true;
 		selectedUnit.itemBought = 1;
-		gameManager_obj.money -= 750;
+		gameManager_obj.money -= 1250;
 		closingMenus_scr();	
 	}
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 1)
 	{
-		if (place_meeting(selectedUnit.x, selectedUnit.y, ironTile_obj))
-		{
-			selectedUnit.countGameRounds = 18;
-			selectedUnit.gameRoundSave = gameManager_obj.gameRound;
-			selectedUnit.building = true;
-			selectedUnit.itemBought = 2;
-			gameManager_obj.money -= 430;
-			closingMenus_scr();
-		}
+		selectedUnit.ironFactory = true;
 	}
 }
 
@@ -82,13 +76,14 @@ if (gameManager_obj.premilitaryMenu)
 	{
 		cursorPos++;
 	}
+	//Soldiers
 	if (keyboard_check_pressed(vk_enter) && cursorPos == 0 && itemBought != 2)
 	{
-		selectedPremilitary.countGameRounds = 4;
+		selectedPremilitary.countGameRounds = 12;
 		selectedPremilitary.gameRoundSave = gameManager_obj.gameRound;
 		selectedPremilitary.building = true;
 		selectedPremilitary.itemBought = 1;
-		gameManager_obj.money -= 400;
+		gameManager_obj.money -= 650;
 		closingMenus_scr();
 	}
 }

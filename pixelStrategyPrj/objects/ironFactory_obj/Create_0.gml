@@ -2,4 +2,4 @@
 
 unitHealth = 125;
 unitDamage = 0;
-unitCost = 300;
+unitCost = 120;

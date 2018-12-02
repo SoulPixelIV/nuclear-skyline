@@ -22,6 +22,7 @@ unitHealthSave = unitHealth;
 countGameRounds = 0;
 gameRoundSave = 0;
 building = false;
+ironFactory = false;
 itemBought = -1;
 
 //Settings

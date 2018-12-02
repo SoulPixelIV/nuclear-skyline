@@ -83,6 +83,21 @@ if (building && countGameRounds == 0)
 		}
 }
 
+//Building Collision
+if (ironFactory)
+{
+	if (place_meeting(x, y, ironTile_obj))
+	{
+		countGameRounds = 14;
+		gameRoundSave = gameManager_obj.gameRound;
+		building = true;
+		itemBought = 2;
+		gameManager_obj.money -= 750;
+		closingMenus_scr();
+	}
+	ironFactory = false;
+}
+
 
 
 
