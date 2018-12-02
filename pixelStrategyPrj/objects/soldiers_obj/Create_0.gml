@@ -11,6 +11,7 @@ moving = false;
 attacking = false;
 drawCircle = false;
 outOfRange = false;
+building = false;
 startPosX = x;
 startPosY = y;
 savePosX = x;

@@ -14,18 +14,18 @@ draw_text(32, 136, string(fps_real));
 
 //Money
 draw_sprite(moneyIcon_spr, 0, 32, 16);
-if (gameManager_obj.money > 0)
+if (gameManager_obj.money > 0 && gameManager_obj.moneyIO > 0)
 {
-	draw_text_color(56, 6, string(gameManager_obj.money), c_green, c_green, c_white, c_white, 255);
+	draw_text_color(56, 6, string(gameManager_obj.money) + " (" + string(gameManager_obj.moneyIO) + ")", c_green, c_green, c_white, c_white, 255);
 }
 else
 {
-	draw_text_color(56, 6, string(gameManager_obj.money), c_red, c_red, c_white, c_white, 255);
+	draw_text_color(56, 6, string(gameManager_obj.money) + " (" + string(gameManager_obj.moneyIO) + ")", c_red, c_red, c_white, c_white, 255);
 }
 
 //Data
-draw_sprite(dataIcon_spr, 0, 128, 16);
-draw_text(152, 6, string(gameManager_obj.data));
+draw_sprite(dataIcon_spr, 0, 192, 16);
+draw_text(216, 6, string(gameManager_obj.data));
 
 //Shop Menu
 if (gameManager_obj.shopMenu)

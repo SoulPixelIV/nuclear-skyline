@@ -16,7 +16,7 @@ if (keyboard_check_pressed(ord("R")))
 			for (var i = 0; i < instance_number(global.types[l]); i++)
 			{
 				type[i] = instance_find(global.types[l], i);
-				if (type[i].steps > 0)
+				if (type[i].steps > 0 && type[i].building == false)
 				{
 					roundDone = false;
 					cameraFocus_scr(type[i]);
@@ -34,6 +34,8 @@ if (keyboard_check_pressed(ord("R")))
 		nextRound_scr();
 	}
 }
+
+
 
 
 
