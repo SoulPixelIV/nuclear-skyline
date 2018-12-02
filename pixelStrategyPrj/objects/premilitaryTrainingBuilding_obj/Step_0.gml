@@ -19,7 +19,7 @@ if (building && countGameRounds == 0)
 			switch (itemBought)
 			{
 				case 1:
-					instance_create_layer(x, y, 1, soldiers_obj);
+					instance_create_layer(x, y, 2, soldiers_obj);
 					break;
 			}
 		}

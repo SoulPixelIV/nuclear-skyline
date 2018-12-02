@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "3c19a00b-7427-4fd4-a951-20a8087705a2",
+            "Value": {
+                "id": "d9fe01f4-2caf-4240-bb5a-08575586d82d",
+                "resourcePath": "sprites\\cloudTile_spr\\cloudTile_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3cc2b69c-593f-4bc9-9e0e-d45da2f90dac",
             "Value": {
                 "id": "95920005-d6cd-4f90-b6fd-695bd10a833f",
@@ -396,6 +404,14 @@
                 "id": "6b380720-4587-4174-907e-17e3d53ae064",
                 "resourcePath": "sprites\\ironFactory_spr\\ironFactory_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a6780033-cccc-4cc1-afa2-2afc1b666c5a",
+            "Value": {
+                "id": "ad38ff93-9c7c-4377-b0fd-48eb14f9235f",
+                "resourcePath": "scripts\\visibility_scr\\visibility_scr.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -660,7 +676,8 @@
         "185063a5-f408-4ce7-b411-e092f2aef254",
         "f37dffa9-a03d-40ab-bb90-5b857747151b",
         "3e44bbaa-c4ed-4719-aa2d-73fda4accb3e",
-        "4216a592-0ff3-4312-a41f-7dc840f27738"
+        "4216a592-0ff3-4312-a41f-7dc840f27738",
+        "a6780033-cccc-4cc1-afa2-2afc1b666c5a"
     ],
     "tutorial": ""
 }

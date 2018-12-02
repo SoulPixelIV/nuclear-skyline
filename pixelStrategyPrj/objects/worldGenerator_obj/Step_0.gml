@@ -23,15 +23,15 @@ if (mapLoading)
 			//Watertile Creation
 			if (irandom(100) < waterPossibility)
 			{
-				instance_create_layer(posX, posY, 2, waterTile_obj);
+				instance_create_layer(posX, posY, 3, waterTile_obj);
 			}
 			else if (irandom(100) < ironPossibility)
 			{
-				instance_create_layer(posX, posY, 2, ironTile_obj);
+				instance_create_layer(posX, posY, 3, ironTile_obj);
 			}
 			else
 			{
-				grassTilei = instance_create_layer(posX, posY, 2, grassTile_obj);
+				grassTilei = instance_create_layer(posX, posY, 3, grassTile_obj);
 				//Island Creation
 				with (grassTilei)
 				{
@@ -52,15 +52,15 @@ if (mapLoading)
 	//Mainbase Creation
 	baseSpawnX = irandom_range(3, (mapSize/64) - 3)
 	baseSpawnY = irandom_range(3, (mapSize/64) - 3)
-	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 1, mainBase_obj);
-	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 1, soldiers_obj);
+	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 2, mainBase_obj);
+	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 2, soldiers_obj);
 	//Enemybase Creation
 	baseSpawnX = irandom_range(3, (mapSize/64) - 3)
 	baseSpawnY = irandom_range(3, (mapSize/64) - 3)
-	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 1, enemyBase_obj);
-	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 1, soldiersEnemy_obj);
-	instance_create_layer((baseSpawnX * 64) - 64, baseSpawnY * 64, 1, soldiersEnemy_obj);
-	instance_create_layer(baseSpawnX * 64, (baseSpawnY * 64) + 64, 1, workersEnemy_obj);
+	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 2, enemyBase_obj);
+	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 2, soldiersEnemy_obj);
+	instance_create_layer((baseSpawnX * 64) - 64, baseSpawnY * 64, 2, soldiersEnemy_obj);
+	instance_create_layer(baseSpawnX * 64, (baseSpawnY * 64) + 64, 2, workersEnemy_obj);
 	mapLoading = false;
 }
 

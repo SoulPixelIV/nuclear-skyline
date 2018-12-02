@@ -106,7 +106,7 @@ if (building && countGameRounds == 0)
 			switch (itemBought)
 			{
 				case 1:
-					instance_create_layer(mainBase_obj.x - 64, mainBase_obj.y, 1, workers_obj);
+					instance_create_layer(mainBase_obj.x - 64, mainBase_obj.y, 2, workers_obj);
 					break;
 			}
 		}

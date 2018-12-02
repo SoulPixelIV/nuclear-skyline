@@ -74,10 +74,10 @@ if (building && countGameRounds == 0)
 			switch (itemBought)
 			{
 				case 1:
-					instance_create_layer(x, y, 1, premilitaryTrainingBuilding_obj);
+					instance_create_layer(x, y, 2, premilitaryTrainingBuilding_obj);
 					break;
 				case 2:
-					instance_create_layer(x, y, 1, ironFactory_obj);
+					instance_create_layer(x, y, 2, ironFactory_obj);
 					break;
 			}
 		}

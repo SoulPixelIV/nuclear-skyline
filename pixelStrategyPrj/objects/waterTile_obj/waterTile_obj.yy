@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "waterTile_obj",
     "eventList": [
-        
+        {
+            "id": "f4d3adee-8956-457b-b2b4-e27a0c05892f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "fabbef36-b0b3-49a5-9339-007de485dc00"
+        },
+        {
+            "id": "bb15d877-2775-4696-839b-dbac983ae786",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "fabbef36-b0b3-49a5-9339-007de485dc00"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
