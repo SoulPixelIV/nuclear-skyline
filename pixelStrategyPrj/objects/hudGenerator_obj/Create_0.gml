@@ -1,17 +1,17 @@
 /// @description Vars
 
 //Shop Menu Elements
-shopMenuElement[0] = "Workers - 250$ 6Rounds";
+shopMenuElement[0] = "Workers - 450$ - 8Rounds";
 shopMenuElement[1] = "XXXXXXXXXXXXXX";
 shopMenuElement[2] = "XXXXXXXXXXXXXX";
 
 //Workers Menu Elements
-workersMenuElement[0] = "Premilitary Training Building - 750$ 9Rounds";
+workersMenuElement[0] = "Premilitary Training Building - 1250$ - 15Rounds";
 workersMenuElement[1] = "Iron Factory - 430$ 18Rounds";
 workersMenuElement[2] = "XXXXXXXXXXXXXX";
 
 //Premilitary Menu Elements
-premilitaryMenuElement[0] = "Basic Soldiers - 400$ 4Rounds";
+premilitaryMenuElement[0] = "Basic Soldiers - 750$ - 14Rounds";
 premilitaryMenuElement[1] = "XXXXXXXXXXXXXX";
 premilitaryMenuElement[2] = "XXXXXXXXXXXXXX";
 
