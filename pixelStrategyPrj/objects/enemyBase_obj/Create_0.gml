@@ -2,10 +2,10 @@
 
 unitHealth = 5000;
 unitDamage = 0;
-militaryBuildingSpawnRate = 8;
-ironFactorySpawnRate = 5;
-enemySpawnRate = 14;
-workersSpawnRate = 9;
+militaryBuildingSpawnRate = 10;
+ironFactorySpawnRate = 10;
+enemySpawnRate = 18;
+workersSpawnRate = 13;
 
 //Values
 tickRound = gameManager_obj.gameRound;
