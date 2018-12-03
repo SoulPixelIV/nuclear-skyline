@@ -35,6 +35,29 @@ if (keyboard_check_pressed(ord("R")))
 	}
 }
 
+//Shortcuts
+if (keyboard_check_pressed(ord("Z")))
+{
+	selectedUnit.steps = 0;
+	closingMenus_scr();
+}
+if (keyboard_check_pressed(ord("H")))
+{
+	if (selectedUnit.unitHealth < selectedUnit.unitHealthSave)
+	{
+		selectedUnit.steps = 0;
+		if (selectedUnit.unitHealth + (selectedUnit.unitHealthSave / 6) > selectedUnit.unitHealthSave)
+		{
+			selectedUnit.unitHealth = selectedUnit.unitHealthSave;
+		}
+		else
+		{
+			selectedUnit.unitHealth += (selectedUnit.unitHealthSave / 6);
+		}
+		closingMenus_scr();
+	}
+}
+
 
 
 

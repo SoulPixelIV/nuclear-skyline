@@ -86,6 +86,10 @@ if (gameManager_obj.unitMenu)
 		draw_text(980, 575, "Health: " + string(gameManager_obj.selectedUnit.unitHealth) + "/" + string(gameManager_obj.selectedUnit.unitHealthSave));
 		draw_text(980, 607, "Damage: " + string(gameManager_obj.selectedUnit.unitDamage));
 		draw_text(980, 639, "Unit Cost: " + string(gameManager_obj.selectedUnit.unitCost) + "$");
+		
+		draw_text(948, 687, "[Z]Sleep");
+		draw_text(1034, 687, "[H]Heal");
+		draw_text(1108, 687, "[U]Upgrade");
 	}
 }
 
