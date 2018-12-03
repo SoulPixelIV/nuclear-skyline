@@ -25,3 +25,11 @@ mXPos = 0;
 mYPos = 0;
 selectedUnit = noone;
 drawDestination = false;
+
+//Chat
+chatOpen = false;
+chatStr = "";
+chatHistory[3] = "";
+chatHistory[2] = "";
+chatHistory[1] = "";
+chatHistory[0] = "";

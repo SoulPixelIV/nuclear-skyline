@@ -93,6 +93,10 @@ if (gameManager_obj.unitMenu)
 	}
 }
 
+//Chat Menu
+//Draw Background
+draw_sprite_ext(menuBackground_spr, 0, 220, 615, 5, 4, 0, 0, image_alpha);
+
 //GameRound
 draw_text(1100, 6, "Round: " + string(gameManager_obj.gameRound));
 
