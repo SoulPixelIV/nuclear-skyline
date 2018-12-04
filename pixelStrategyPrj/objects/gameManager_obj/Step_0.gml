@@ -85,26 +85,35 @@ if (chatOpen)
 
 if (keyboard_check_pressed(vk_enter))
 {
-	//Go through every chat slot
-	for (i = 0; i < array_length_1d(chatHistory); i++)
+	//Set chat slot to message
+	var newchatStr = string_copy(chatStr, 1, 1);
+	if (newchatStr == ".")
 	{
-		//Set chat slot to message
-		if (chatHistory[i] == "")
+		chatStr = commands_scr(chatStr);
+
+		for (i = 2; i > -1; i--)
 		{
-			chatHistory[i] = chatStr;
-			break;
+			chatHistory[i+1] = chatHistory[i];
+		}
+		chatHistory[0] = chatStr;
+		chatStr = "";
+	}
+	else
+	{
+		if (chatHistory[0] == "")
+		{
+			chatHistory[0] = chatStr;
 		}
 		else
 		{
-			for (i = 2; i > 0; i--)
+			for (i = 2; i > -1; i--)
 			{
 				chatHistory[i+1] = chatHistory[i];
 			}
 			chatHistory[0] = chatStr;
-			break;
 		}
+		chatStr = "";
 	}
-	chatStr = "";
 }
 	
 

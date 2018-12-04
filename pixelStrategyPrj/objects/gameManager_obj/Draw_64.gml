@@ -2,13 +2,13 @@
 
 if (chatOpen)
 {
-	draw_text(16, 685, "> ");
+	draw_text(32, view_get_hport(0) - 48, "> ");
 }
 
-draw_text_ext(32, 685, chatStr, 32, 256);
+draw_text_ext(48, view_get_hport(0) - 48, chatStr, 32, 256);
 
 //Draw Chat History
-draw_text(32, 653, chatHistory[0]);
-draw_text(32, 621, chatHistory[1]);
-draw_text(32, 589, chatHistory[2]);
-draw_text(32, 557, chatHistory[3]);
+draw_text(48, view_get_hport(0) - 80, chatHistory[0]);
+draw_text(48, view_get_hport(0) - 112, chatHistory[1]);
+draw_text(48, view_get_hport(0) - 144, chatHistory[2]);
+draw_text(48, view_get_hport(0) - 176, chatHistory[3]);
