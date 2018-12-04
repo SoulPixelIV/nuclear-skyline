@@ -1,8 +1,20 @@
-if (argument0 == ".help")
+if (string_pos(".help", argument0) == 1)
 {
-	return "this is the help you fag. <o/";
+	return "Available commands: .fog -> Toggle Fog of War";
+}
+else if (string_pos(".fog", argument0) == 1)
+{
+	if (fog)
+	{
+		fog = false;
+	}
+	else
+	{
+		fog = true;
+	}
+	return "Toggled Fog of War."
 }
 else
 {
-	return "stop talking bullshit.";
+	return "Command doesn't exist.";
 }

@@ -33,3 +33,6 @@ chatHistory[3] = "";
 chatHistory[2] = "";
 chatHistory[1] = "Welcome to Nuclear Skyline!";
 chatHistory[0] = "Type .help for a list of commands.";
+
+//Commands
+fog = true;

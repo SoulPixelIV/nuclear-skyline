@@ -83,37 +83,20 @@ if (chatOpen)
 	}
 }
 
-if (keyboard_check_pressed(vk_enter))
+if (keyboard_check_pressed(vk_enter) && chatOpen)
 {
 	//Set chat slot to message
-	var newchatStr = string_copy(chatStr, 1, 1);
-	if (newchatStr == ".")
+	if (string_char_at(chatStr, 1) == ".")
 	{
 		chatStr = commands_scr(chatStr);
-
-		for (i = 2; i > -1; i--)
-		{
-			chatHistory[i+1] = chatHistory[i];
-		}
-		chatHistory[0] = chatStr;
-		chatStr = "";
 	}
-	else
+	//Move History up
+	for (i = 2; i > -1; i--)
 	{
-		if (chatHistory[0] == "")
-		{
-			chatHistory[0] = chatStr;
-		}
-		else
-		{
-			for (i = 2; i > -1; i--)
-			{
-				chatHistory[i+1] = chatHistory[i];
-			}
-			chatHistory[0] = chatStr;
-		}
-		chatStr = "";
+		chatHistory[i+1] = chatHistory[i];
 	}
+	chatHistory[0] = chatStr;
+	chatStr = "";
 }
 	
 
