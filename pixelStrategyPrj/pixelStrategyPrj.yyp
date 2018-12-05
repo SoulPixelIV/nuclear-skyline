@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "7dcadf67-bd18-47cb-9c4d-4456306cc4fa",
+            "Value": {
+                "id": "e8532d74-2079-4cdf-a4e7-ec0c08ae3fa1",
+                "resourcePath": "sprites\\pyromancer_spr\\pyromancer_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "894b9b42-4844-4639-b08c-762b45a671e2",
             "Value": {
                 "id": "169b375e-4887-46c0-87eb-33701d659401",
