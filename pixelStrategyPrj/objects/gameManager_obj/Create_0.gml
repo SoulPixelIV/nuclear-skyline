@@ -29,6 +29,9 @@ drawDestination = false;
 //Chat
 chatOpen = false;
 chatStr = "";
+chatHistory[6] = "";
+chatHistory[5] = "";
+chatHistory[4] = "";
 chatHistory[3] = "";
 chatHistory[2] = "";
 chatHistory[1] = "Welcome to Nuclear Skyline!";

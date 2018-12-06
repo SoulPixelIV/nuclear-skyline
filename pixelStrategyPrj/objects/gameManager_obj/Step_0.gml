@@ -62,6 +62,8 @@ if (selectedUnit != noone)
 }
 
 //Chat
+
+//Enter Chat
 if (keyboard_check_pressed(vk_tab))
 {
 	if (chatOpen)
@@ -76,13 +78,23 @@ if (keyboard_check_pressed(vk_tab))
 
 if (chatOpen)
 {
+	var textLength = string_length(chatStr);
 	if (keyboard_lastkey != -1)
 	{
 		chatStr += keyboard_lastchar;
 		keyboard_lastkey = -1;
 	}
+	//Delete
+	if (keyboard_check_pressed(vk_backspace))
+	{
+		//if (chatStr != "")
+		//{
+			chatStr = string_delete(chatStr, textLength - 1, 1);
+		//}
+	}	
 }
 
+//Enter
 if (keyboard_check_pressed(vk_enter) && chatOpen)
 {
 	//Set chat slot to message
@@ -91,14 +103,13 @@ if (keyboard_check_pressed(vk_enter) && chatOpen)
 		chatStr = commands_scr(chatStr);
 	}
 	//Move History up
-	for (i = 2; i > -1; i--)
+	for (i = array_length_1d(chatHistory) - 1; i > -1; i--)
 	{
 		chatHistory[i+1] = chatHistory[i];
 	}
 	chatHistory[0] = chatStr;
 	chatStr = "";
 }
-	
 
 
 
