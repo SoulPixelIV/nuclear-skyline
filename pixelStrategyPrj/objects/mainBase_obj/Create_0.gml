@@ -1,4 +1,4 @@
 /// @description Main Values
 
-unitHealth = 5000;
+unitHealth = 2500;
 unitDamage = 0;

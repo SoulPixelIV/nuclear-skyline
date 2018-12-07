@@ -3,11 +3,17 @@
 if (tickRound < gameManager_obj.gameRound)
 {
 	//Enemy Spawnrate
-	if (irandom(100) < enemySpawnRate && instance_exists(premilitaryTrainingBuildingEnemy_obj))
+	if (irandom(100) < soldiersSpawnRate && instance_exists(premilitaryTrainingBuildingEnemy_obj))
 	{
 		var numBuilding = instance_number(premilitaryTrainingBuildingEnemy_obj);
 		var selectedBuilding = instance_find(premilitaryTrainingBuildingEnemy_obj, choose(0, numBuilding - 1));
 		instance_create_layer(selectedBuilding.x, selectedBuilding.y - 64, 2, soldiersEnemy_obj);
+	}
+	if (irandom(100) < pyromancersSpawnRate && instance_exists(premilitaryTrainingBuildingEnemy_obj))
+	{
+		var numBuilding = instance_number(premilitaryTrainingBuildingEnemy_obj);
+		var selectedBuilding = instance_find(premilitaryTrainingBuildingEnemy_obj, choose(0, numBuilding - 1));
+		instance_create_layer(selectedBuilding.x, selectedBuilding.y - 64, 2, pyromancersEnemy_obj);
 	}
 	//Workers Spawnrate
 	if (irandom(100) < workersSpawnRate)

@@ -29,7 +29,7 @@ if (keyboard_check_pressed(ord("R")) && !chatOpen)
 			}
 		}
 	}
-	if (roundDone)
+	if (roundDone || !instance_exists(unit_obj))
 	{
 		nextRound_scr();
 	}

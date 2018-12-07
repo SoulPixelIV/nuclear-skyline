@@ -15,7 +15,7 @@ for (var l = 0; l < array_length_1d(global.enemyTypes); l++)
 
 		//Calculate for every step
 		for (var j = 0; j < global.enemyTypes[l].steps; j++)
-		{		
+		{
 			//Iterate through all instances
 			for (var i = 0; i < instance_number(global.enemyTypes[l]); i++)
 			{

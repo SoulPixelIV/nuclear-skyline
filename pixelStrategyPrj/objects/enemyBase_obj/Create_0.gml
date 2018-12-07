@@ -1,11 +1,12 @@
 /// @description Main Values
 
-unitHealth = 5000;
+unitHealth = 2500;
 unitDamage = 0;
 militaryBuildingSpawnRate = 10;
-ironFactorySpawnRate = 10;
-enemySpawnRate = 18;
-workersSpawnRate = 13;
+ironFactorySpawnRate = 23;
+soldiersSpawnRate = 18;
+pyromancersSpawnRate = 8;
+workersSpawnRate = 15;
 
 //Values
 tickRound = gameManager_obj.gameRound;
