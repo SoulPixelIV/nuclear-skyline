@@ -60,6 +60,7 @@ if (mapLoading)
 	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 2, enemyBase_obj);
 	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 2, soldiersEnemy_obj);
 	instance_create_layer((baseSpawnX * 64) - 64, baseSpawnY * 64, 2, soldiersEnemy_obj);
+	instance_create_layer((baseSpawnX * 64), (baseSpawnY * 64) - 64, 2, pyromancersEnemy_obj);
 	instance_create_layer(baseSpawnX * 64, (baseSpawnY * 64) + 64, 2, workersEnemy_obj);
 	mapLoading = false;
 }

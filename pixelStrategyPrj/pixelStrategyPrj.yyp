@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "ac5c868c-9a4f-4e8d-9ac0-77dca2f3f090",
+            "Value": {
+                "id": "d313949f-ac53-4602-8a1d-7f7218651f82",
+                "resourcePath": "objects\\pyromancersEnemy_obj\\pyromancersEnemy_obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ad87c19b-aa3d-43da-ba35-d6c2406a4d57",
             "Value": {
                 "id": "fda10d1f-abc7-4001-912c-72180b366abe",
