@@ -78,7 +78,7 @@ if (keyboard_check_pressed(vk_tab))
 
 if (chatOpen)
 {
-	var textLength = string_length(chatStr);
+	var newChatStr = chatStr;
 	if (keyboard_lastkey != -1)
 	{
 		chatStr += keyboard_lastchar;
@@ -87,16 +87,32 @@ if (chatOpen)
 	//Delete
 	if (keyboard_check_pressed(vk_backspace))
 	{
-		//if (chatStr != "")
-		//{
-			chatStr = string_delete(chatStr, textLength - 1, 1);
-		//}
+		chatStr = string_delete(newChatStr, string_length(newChatStr), 1);
 	}	
+	//History Paste
+	if (keyboard_check_pressed(vk_up))
+	{
+		if (chatHistoryLine < array_length_1d(chatHistory) - 1)
+		{
+			chatHistoryLine++;
+			chatStr = chatHistory[chatHistoryLine];
+		}
+	}
+	if (keyboard_check_pressed(vk_down))
+	{
+		if (chatHistoryLine > 0)
+		{
+			chatHistoryLine--;
+			chatStr = chatHistory[chatHistoryLine];
+		}
+	}
+	show_debug_message(chatHistoryLine);
 }
 
 //Enter
 if (keyboard_check_pressed(vk_enter) && chatOpen)
 {
+	chatHistoryLine = -1;
 	//Set chat slot to message
 	if (string_char_at(chatStr, 1) == ".")
 	{

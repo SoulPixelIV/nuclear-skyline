@@ -29,6 +29,7 @@ drawDestination = false;
 //Chat
 chatOpen = false;
 chatStr = "";
+chatHistoryLine = -1;
 chatHistory[6] = "";
 chatHistory[5] = "";
 chatHistory[4] = "";
