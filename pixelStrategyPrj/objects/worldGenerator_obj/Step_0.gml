@@ -21,7 +21,7 @@ if (mapLoading)
 		for (posX = 64; posX < global.sizeX; posX += 64)
 		{
 			//Watertile Creation
-			if (irandom(100) < waterPossibility)
+			if (irandom(100) < waterPossibility || posX < 256 || posY < 256 || posX > (mapSize - 256) || posY > (mapSize - 256))
 			{
 				instance_create_layer(posX, posY, 3, waterTile_obj);
 			}

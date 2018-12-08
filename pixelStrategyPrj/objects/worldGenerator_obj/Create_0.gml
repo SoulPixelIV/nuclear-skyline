@@ -1,6 +1,6 @@
 /// @description Creating Values
 
-mapSize = 1024;
+mapSize = 2056;
 mapLoading = true;
 
 ironPossibility = 10;
