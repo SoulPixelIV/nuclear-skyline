@@ -35,7 +35,7 @@ var cursorY = ((view_get_hport(0) / 4) + 60) + (cursorPos * 32);
 if (gameManager_obj.shopMenu)
 {
 	//Draw Background
-	draw_sprite_ext(menuBackground_spr, 0, view_get_wport(0) / 2, view_get_hport(0) / 2, 10, 10, 0, 0, image_alpha);
+	draw_sprite_ext(menuBackground_spr, 0, view_get_wport(0) / 2, view_get_hport(0) / 2, 10, 10, 0, -1, image_alpha);
 	//Draw Cursor
 	var itemLength = string_width(shopMenuElement[cursorPos]) + (view_get_wport(0) - (view_get_wport(0) / 2)) - 384;
 	draw_sprite(cursor_spr, 0, itemLength, cursorY);
@@ -50,7 +50,7 @@ if (gameManager_obj.shopMenu)
 if (gameManager_obj.workersMenu)
 {
 	//Draw Background
-	draw_sprite_ext(menuBackground_spr, 0, view_get_wport(0) / 2, view_get_hport(0) / 2, 10, 10, 0, 0, image_alpha);
+	draw_sprite_ext(menuBackground_spr, 0, view_get_wport(0) / 2, view_get_hport(0) / 2, 10, 10, 0, -1, image_alpha);
 	//Draw Cursor
 	var itemLength = string_width(workersMenuElement[cursorPos]) + (view_get_wport(0) - (view_get_wport(0) / 2)) - 384;
 	draw_sprite(cursor_spr, 0, itemLength, cursorY);
@@ -65,7 +65,7 @@ if (gameManager_obj.workersMenu)
 if (gameManager_obj.premilitaryMenu)
 {
 	//Draw Background
-	draw_sprite_ext(menuBackground_spr, 0, view_get_wport(0) / 2, view_get_hport(0) / 2, 10, 10, 0, 0, image_alpha);
+	draw_sprite_ext(menuBackground_spr, 0, view_get_wport(0) / 2, view_get_hport(0) / 2, 10, 10, 0, -1, image_alpha);
 	//Draw Cursor
 	var itemLength = string_width(premilitaryMenuElement[cursorPos]) + (view_get_wport(0) - (view_get_wport(0) / 2)) - 384;
 	draw_sprite(cursor_spr, 0, itemLength, cursorY);
@@ -99,5 +99,5 @@ if (gameManager_obj.unitMenu)
 
 //Chat Menu
 //Draw Background
-draw_sprite_ext(menuBackground_spr, 0, 228, view_get_hport(0) - 112, 5, 4, 0, 0, image_alpha);
+draw_sprite_ext(menuBackground_spr, 0, 228, view_get_hport(0) - 112, 5, 4, 0, -1, image_alpha);
 
