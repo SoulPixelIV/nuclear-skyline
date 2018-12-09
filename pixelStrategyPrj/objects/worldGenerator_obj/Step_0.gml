@@ -55,13 +55,20 @@ if (mapLoading)
 	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 2, mainBase_obj);
 	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 2, soldiers_obj);
 	//Enemybase Creation
-	baseSpawnX = irandom_range(3, (mapSize/64) - 3)
-	baseSpawnY = irandom_range(3, (mapSize/64) - 3)
-	instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 2, enemyBase_obj);
-	instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 2, soldiersEnemy_obj);
-	instance_create_layer((baseSpawnX * 64) - 64, baseSpawnY * 64, 2, soldiersEnemy_obj);
-	instance_create_layer((baseSpawnX * 64), (baseSpawnY * 64) - 64, 2, pyromancersEnemy_obj);
-	instance_create_layer(baseSpawnX * 64, (baseSpawnY * 64) + 64, 2, workersEnemy_obj);
+	for (m = 1; m < gameManager_obj.enemyTeams + 1; m++)
+	{
+		baseSpawnX = irandom_range(3, (mapSize/64) - 3)
+		baseSpawnY = irandom_range(3, (mapSize/64) - 3)
+		instance_create_layer(baseSpawnX * 64, baseSpawnY * 64, 2, enemyBase_obj);
+		var soldier1 = instance_create_layer((baseSpawnX * 64) + 64, baseSpawnY * 64, 2, soldiersEnemy_obj);
+		var soldier2 = instance_create_layer((baseSpawnX * 64) - 64, baseSpawnY * 64, 2, soldiersEnemy_obj);
+		var pyromancer1 = instance_create_layer((baseSpawnX * 64), (baseSpawnY * 64) - 64, 2, pyromancersEnemy_obj);
+		var worker1 = instance_create_layer(baseSpawnX * 64, (baseSpawnY * 64) + 64, 2, workersEnemy_obj);
+		soldier1.faction = m;
+		soldier2.faction = m;
+		pyromancer1.faction = m;
+		worker1.faction = m;
+	}
 	mapLoading = false;
 }
 

@@ -95,11 +95,27 @@
             }
         },
         {
+            "Key": "1e9f995c-fbea-4bd2-9fa2-91df4bec2177",
+            "Value": {
+                "id": "54cde9fa-3a4f-4aec-9bb9-11c382d91074",
+                "resourcePath": "sprites\\pyromancersPointer_spr\\pyromancersPointer_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "205ad33f-cdd3-49a4-a529-1cf34ca450e7",
             "Value": {
                 "id": "7c2df06e-75b6-41d4-83cb-9a144c97c730",
                 "resourcePath": "objects\\gameManager_obj\\gameManager_obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "209fbe82-52a8-4b95-85ae-605b0ae7f889",
+            "Value": {
+                "id": "43f0cff4-bb4e-4595-9ffb-b48c912107d2",
+                "resourcePath": "sprites\\workersPointer_spr\\workersPointer_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -483,6 +499,14 @@
             "Value": {
                 "id": "0101449a-fad3-40a0-9737-259f5e939173",
                 "resourcePath": "sprites\\ironTile_spr\\ironTile_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "af23bfcb-0e03-4b31-a4b7-5c3a761d33bf",
+            "Value": {
+                "id": "1ddf615b-51f1-4ba3-82ab-79a9c8c24d2b",
+                "resourcePath": "sprites\\soldiersPointer_spr\\soldiersPointer_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

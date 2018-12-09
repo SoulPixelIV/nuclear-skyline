@@ -13,6 +13,7 @@ moneyIO = 0;
 posCash = 0;
 negCash = 0;
 data = 8;
+enemyTeams = 3;
 
 shopMenu = false;
 unitMenu = false;

@@ -6,6 +6,9 @@ moveSpeed = 1.9;
 unitHealth = 60;
 unitDamage = 15;
 
+//War Values
+faction = -1;
+
 moving = false;
 outOfRange = false;
 startPosX = x;
